@@ -48,5 +48,11 @@ CREATE TABLE kalender_item (
 	 datum date not null,
 	 activiteit varchar(100) not null
  ) engine=innodb;
+ 
+CREATE TABLE nieuws_item(
+	nieuws_item_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	datum date not null,
+	tekst varchar (150) not null
+)engine=innodb;
 
 -- http://www.phpriot.com/articles/storing-images-in-mysql
