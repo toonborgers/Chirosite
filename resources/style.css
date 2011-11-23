@@ -2,6 +2,7 @@ body{
 	background-color:blue;
 	margin: 0;
     padding: 0;
+	font-family:Helvetica, Verdana;
 }
 
 #center{
@@ -30,10 +31,12 @@ body{
 	height:90%;
 	width:85%;
 	float:right;
+	padding-top:5px;	
 }
 
 #menu{
-	padding-top:5px;
+	padding-top:5px;	
+	font-size:1.2em;
 }
 
 #menu ul{
@@ -47,7 +50,13 @@ body{
 }
 
 #jongensmenu, #meisjesmenu{
-	display:none;
-	padding-top:0;
-	padding-bottom:0;
+	display:none;	
+}
+
+.menuItem{
+	padding-left:5px;
+}
+
+.menuItemL2{
+	padding-left:12px;
 }

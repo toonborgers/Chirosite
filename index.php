@@ -16,6 +16,7 @@
 				<?php include_once "menu.php" ?>
 			</div>
 			<div id="content">
+				<?php include_once "include.php" ?>
 			</div>
 		</div>
 	</body>
