@@ -31,3 +31,23 @@ body{
 	width:85%;
 	float:right;
 }
+
+#menu{
+	padding-top:5px;
+}
+
+#menu ul{
+	display:inline;
+}
+
+#menu ul li{
+	list-style:none;
+	padding-left:0;
+	margin-left:0;
+}
+
+#jongensmenu, #meisjesmenu{
+	display:none;
+	padding-top:0;
+	padding-bottom:0;
+}
