@@ -1,42 +1,39 @@
 body{
-	background-color:#FFCC00;
-	margin: 0;
-    padding: 0;
-	font-family:Helvetica, Verdana;	
+	background-color:#FFCC00;	
+	font-family:Helvetica, Verdana;
+	margin: auto;
 }
 
-#center{
-	width: 80%;
-	height:100%;
-	margin-left:10%;
+#center{	
+	height:100%;	
 	padding:0;
+	width: 70%;
+	margin-left:15%;
+}
+
+#main{
+	height:85%;	
 }
 
 #head{
 	background-color:red;
 	width:100%;
-	height:10%;
+	height:15%;
 }
 
 #menu{
 	background-color:#6A6A5A;
-	color:CCCC99;
-	height:90%;
-	width:15%;
-	float:left;
+	color:#CCCC99;
+	height:100%;	
 }
 
 #content{	
-	background-color:#000066;
-	height:90%;
-	width:85%;
-	float:right;
-	padding-top:5px;
-	color:CCCC99;	
+	background-color:#000066;	
+	color:#CCCC99;
+	height:100%;	
 }
 
 #menu{
-	padding-top:5px;	
 	font-size:1.2em;
 }
 
@@ -50,12 +47,27 @@ body{
 	margin-left:0;
 }
 
+#jongens, #meisjes{
+	cursor:pointer;
+}
+
 #jongensmenu, #meisjesmenu{
 	display:none;	
 }
 
 .menuItem{
 	padding-left:5px;
+}
+
+.menuItem a, .menuItem a:visited, .menuItem a:active, .menuItemL2 a, .menuItemL2 a:visited, .menuItemL2 a:active{
+	color:#CCCC99;
+	text-decoration:none;
+}
+
+.menuItem a:hover, .menuItemL2 a:hover{
+	color:#CCCC99;
+	text-decoration:none;
+	border-bottom: 2px dashed #CCCC99;
 }
 
 .menuItemL2{

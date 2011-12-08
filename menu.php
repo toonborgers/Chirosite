@@ -1,19 +1,19 @@
 <span class="menuItem"><a href="index.php?page=home">Home</a></span>
 <br/>
-<span class="menuItem">Oudercomit&eacute;</span>
+<span class="menuItem"><a href="index.php?page=oc">Oudercomit&eacute;</a></span>
 <br/>
-<span class="menuItem">Foto's</span>
+<span class="menuItem"><a href="index.php?page=foto">Foto's</a></span>
 <br/>
 <span class="menuItem" id="jongens">Jongens</span>
 <span id="spacerJ"><br/></span>
 <div id="jongensmenu">	
-	<span class="menuItemL2">Programma's</span>
+	<span class="menuItemL2"><a href="index.php?page=jprog">Programma's</a></span>
 	<br/>
-	<span class="menuItemL2">Huren</span>
+	<span class="menuItemL2"><a href="index.php?page=jhuren">Huren</a></span>
 	<br/>
-	<span class="menuItemL2">Leiding</span>
+	<span class="menuItemL2"><a href="index.php?page=jleiding">Leiding</a></span>
 	<br/>
-	<span class="menuItemL2">Kalender</span>
+	<span class="menuItemL2"><a href="index.php?page=jkal">Kalender</a></span>
 </div>
 <span class="menuItem" id="meisjes">Meisjes</span>
 <div id="meisjesmenu">
