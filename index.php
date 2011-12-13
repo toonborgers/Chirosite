@@ -9,13 +9,29 @@
 		<script type="text/javascript" src="resources/jquery-1.7.min.js"></script>
 		<script type="text/Javascript" src="resources/main.js"></script>
 		<script type="text/Javascript" src="resources/yui-min.js"></script>
-		
+		<link rel="stylesheet" type="text/css" href="resources/shadowbox/shadowbox.css">
+		<script type="text/javascript" src="resources/shadowbox/shadowbox.js"></script>
+		<script type="text/javascript">
+			Shadowbox.init({
+				skipSetup: true
+			});
+			
+			function openModaal(tekst){
+				Shadowbox.open({
+					content:    tekst,
+					player:     "html",
+					title:      "Welcome",
+					height:     350,
+					width:      350
+				});
+			}				
+		</script>
 	</head>
 	
 	</body>		
 		<div id="center">
 			<div id="head">
-			
+				<a href="javascript: openModaal('Test');">Link</a>
 			</div>
 			<div id="main" class="yui3-g">
 				<div id="menu" class="yui3-u-1-5">
