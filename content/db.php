@@ -1,5 +1,4 @@
 <?php
-
 	class DB{
 		const USER="toon";
 		const PASSWORD="toon";

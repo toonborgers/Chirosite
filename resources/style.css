@@ -31,6 +31,13 @@ body{
 	background-color:#000066;	
 	color:#CCCC99;
 	height:100%;	
+	overflow:scroll;
+}
+
+#bla{
+	margin-left:4px;
+	margin-top:2px;
+	margin-right: 4px;
 }
 
 #menu{
@@ -79,6 +86,6 @@ body{
 }
 
 .nieuwsberichtDatum{
-	font-size:0.8em;
+	font-size:0.75em;
 	font-style:italic;
 }
