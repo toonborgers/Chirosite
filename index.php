@@ -1,4 +1,8 @@
-<?php include_once 'getPage.php' ?>
+<?php 
+	include_once 'getPage.php';
+	include_once 'resources/rb.php';
+	R::setup('mysql:host=localhost;dbname=chiro','toon','toon'); 
+?>
 <html>
 	<head>
 		<title>Chiro Kasterlee - <?php echo $page->getTitle(); ?></title>

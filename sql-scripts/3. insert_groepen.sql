@@ -14,4 +14,4 @@ insert into groep values (null, 'm', 'Speelclub', 'FFFF00',2);
 insert into groep values (null, 'm', 'Kwiks', '008000',3);
 insert into groep values (null, 'm', 'Tippers', 'FF0000',4);
 insert into groep values (null, 'm', 'Tiptiens', '0000FF',5);
-insert into groep values (null, 'm', 'Aspies', 'FFA500',6);
+insert into groep values (null, 'm', 'Aspis', 'FFA500',6);
