@@ -12,9 +12,16 @@ body {
 #toplinks{position:absolute; right:10px; top:10px;}
 #menu{float:right; width:526px; height:32px; background-image:url(bg_menu.gif); background-repeat:repeat-x;}
 #submenu{float:right; width:526px; height:32px; background-image:url(bg_submenu.gif); background-position:top; background-repeat:repeat-x;}
-#contenttext{float:right; width:526px;}
+#contenttext{float:right; width:800px;}
 #leftpanel{float:left; width:274px;}
 #footer{float:left; width:800px; background-color:#F0F0F0; padding:10px;}
+#slagzin{
+	text-align:right;
+	font-weight:bold;
+	color:#CC0000;
+	font-size:0.7em;
+	font-family: Tahoma, sans-serif;
+}
 
 /*GRAY PANEL*/
 .graypanel{
@@ -25,6 +32,14 @@ body {
 .bodytext {
 	font: 0.7em Tahoma, sans-serif;
 	color: #666666;
+}
+
+.beep {
+font-size: 1.2em;
+	font-family: Tahoma, sans-serif;
+	/*text-align:center;*/
+	font-weight:bold;
+	color:#CC0000;
 }
 
 .titletext {
