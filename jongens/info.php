@@ -15,13 +15,12 @@
 					<div style="padding:10px">
 						<span class="titletext">Leiders</span>
 					</div>
-					<?php 
-						&sql = "select * from leiding where chiro=1 and afdeling='sloebers'"
-						$resultaat = mysql_query($sql, $db); /*$db moet nog op voorhand gedefinieerd worden met een file*/
-						while($rij = mysql_fetch_array($resultaat)) {
-							echo "<div class ='paarseachtergrond'></div>"
-						}
-					?>
+					<?php include("retrieveLeider.php?db='$db'&afdeling='sloebers'"; ?>
+					<?php include("retrieveLeider.php?db='$db'&afdeling='speelclub'"; ?>
+					<?php include("retrieveLeider.php?db='$db'&afdeling='rakkers'"; ?>
+					<?php include("retrieveLeider.php?db='$db'&afdeling='toppers'"; ?>
+					<?php include("retrieveLeider.php?db='$db'&afdeling='kerels'"; ?>
+					<?php include("retrieveLeider.php?db='$db'&afdeling='aspiranten'"; ?>
 				</div>			
 				<?php include("../footer.html"); ?>
 			</div>
