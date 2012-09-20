@@ -16,7 +16,14 @@
 						<span class="titletext">Welkom bij de site van chiro Kasterlee</span>
 					</div>
 					<div class="bodytext" style="padding:12px;" align="center">
-						<?php include_once("./database/db-info.php"); ?>
+						<?php 
+							include "./database/db-info.php";
+							include "./database/fetch_posters.php";
+							include "./database/fetch_nieuws.php";
+							mysql_close($db_handle);
+							echo $affTabel;
+							echo $nieuws;
+						?>
 					</div>
 				</div>			
 				<?php include("./footer.html"); ?>

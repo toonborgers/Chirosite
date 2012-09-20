@@ -6,4 +6,5 @@
 	
 	$db_handle = mysql_connect($server, $user_name, $pass_word);
 	mysql_select_db($database, $db_handle);
+	mysql_query("SET NAMES utf8");
 ?>
