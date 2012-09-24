@@ -1,5 +1,4 @@
-<?php
-	include "db-info.php";
+<?php	
 	$sql = "SELECT DATE_FORMAT(datum, '%e - %m - %Y') as datum, afbeelding, link FROM foto ORDER BY datum";
 	$affiches = doQuery($sql);
 	$affTabel = '';
@@ -12,5 +11,5 @@
 		}
 		$foo .= "<br/><br/>";
 		echo $foo;
-	}
+	}	
 ?>
