@@ -110,18 +110,22 @@ font-size: 1.2em;
 }
 
 .paarseachtergrond {
-	width: 60%; height: 150px;
-	color:#000000; 
-	font: 1em Tahoma, sans-serif;
+	width: 358px; height: 100px;
+	float:left;
+	border: 1px solid #696;
+	padding: 10px;
 	margin:10px;
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #7F00EF 100%);
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #7F00EF 100%);
-	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #7F00EF 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #7F00EF));
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #7F00EF 100%);
-	background-image: linear-gradient(to top, #FFFFFF 0%, #7F00EF 100%);
-	border-radius:15px;
-	-moz-border-radius:15px;
+	text-align: left;
+	-webkit-box-shadow: #666 2px 2px 3px;
+	-moz-box-shadow: #666 2px 2px 3px;
+	box-shadow: #666 2px 2px 3px;
+	background: #A43FFD;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#A43FFD), to(#FFFFFF));
+	background: -webkit-linear-gradient(#A43FFD, #FFFFFF);
+	background: -moz-linear-gradient(#A43FFD, #FFFFFF);
+	background: -ms-linear-gradient(#A43FFD, #FFFFFF);
+	background: -o-linear-gradient(#A43FFD, #FFFFFF);
+	background: linear-gradient(#A43FFD, #FFFFFF);
 }
 
 .geleachtergrond {
