@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php include "database/db-info.php";?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -16,13 +17,9 @@
 						<span class="titletext">Welkom bij de site van chiro Kasterlee</span>
 					</div>
 					<div class="bodytext" style="padding:12px;" align="center">
-						<?php 
-							include "./database/db-info.php";
-							include "./database/fetch_posters.php";
-							include "./database/fetch_nieuws.php";
-							mysql_close($db_handle);
-							echo $affTabel;
-							echo $nieuws;
+						<?php 							
+							include "./database/posters.php";
+							include "./database/nieuws.php";							
 						?>
 					</div>
 				</div>			
