@@ -45,3 +45,9 @@ create table new_login (
 	login varchar(20) not null,
 	wachtwoord varchar(32) not null	
 ) engine=innodb;
+
+create table new_afbeelding (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	type varchar(20) not null,
+	data mediumblob not null	
+) engine=innodb;
