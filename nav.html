@@ -1,17 +1,22 @@
-<div id="logo"><a href="http://chirokasterlee.be/newsite/index.php"><img src="http://chirokasterlee.be/newsite/images/logo.jpg" style="border-style:none"/></a></div>
+<div id="logo"><a href="index.php"><img src="static/images/logo.jpg" style="border-style:none"/></a></div>
 <div id="topheader">
 	<div align="left" class="beep">
-		<img src="http://chirokasterlee.be/newsite/images/chirokasterlee.jpg"/>
+		<img src="static/images/chirokasterlee.jpg"/>
 	</div>
 </div>
 <div id="menu">
 	<div align="right" class="smallwhitetext" style="padding:9px;">
-		<a href="http://chirokasterlee.be/newsite/index.php">Home</a> | <a href="#">Jongens</a> | <a href="#">Meisjes</a> | <a href="#">Foto's</a> | <a href="#">Chirofeesten</a> | <a href="#">Contact</a> 
+		<a href="index.php?page=home">Home</a> | <a id="jongenslink" href="javascript:void(0)">Jongens</a> | <a id="meisjeslink" href="javascript:void(0)">Meisjes</a> | <a href="index.php?page=foto">Foto's</a> | <a href="index.php?page=chirofeesten">Chirofeesten</a> | <a href="index.php?page=contact">Contact</a> 
 	</div>
 </div>
 <div id="submenu">
 	<div align="right" class="smallgraytext" style="padding:9px;">
-		<a href="http://chirokasterlee.be/newsite/jongens/info.php">Info</a> | <a href="#">Programma's</a> | <a href="#">Het kamp</a> | <a href="#">Kalender</a> | <a href="#">Huren</a>
+		<span id="jmenu">
+			<a href="jongens/info.php">Info</a> | <a href="#">Programma's</a> | <a href="#">Het kamp</a> | <a href="#">Kalender</a> | <a href="#">Huren</a>
+		</span>
+		<span id="mmenu">
+			<a href="meisjes/info.php">Info</a> | <a href="#">Programma's</a> | <a href="#">Het kamp</a> | <a href="#">Kalender</a> | <a href="#">Huren</a>
+		</span>
 	</div>
 </div>
 

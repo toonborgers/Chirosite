@@ -3,9 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<link rel="stylesheet" href="images/style.css" type="text/css" />
+		<link rel="stylesheet" href="static/style.css" type="text/css" />
+		<link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="static/script.js"></script>
 		<title>Chiro Kasterlee</title>
 	</head>
 	<body>
@@ -13,15 +15,7 @@
 			<div id="content" style="width:800px">
 				<?php include("./nav.html"); ?>
 				<div id="contenttext">
-					<div style="padding:10px">
-						<span class="titletext">Welkom bij de site van chiro Kasterlee</span>
-					</div>
-					<div class="bodytext" style="padding:12px;" align="center">
-						<?php 							
-							include "./database/posters.php";
-							include "./database/nieuws.php";							
-						?>
-					</div>
+					<?php include "getPage.php";?>				
 				</div>			
 				<?php include("./footer.html"); ?>
 			</div>
