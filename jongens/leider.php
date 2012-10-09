@@ -11,17 +11,17 @@
     while($rij = mysql_fetch_array($resultaat)) {
 	
 		if($afdeling == 'sloebers') {
-			echo "<div class='paarseachtergrond'>"
+			echo "<div class='paarseachtergrond'>";
 		} elseif($afdeling == 'speelclub') {
-			echo "<div class='geleachtergrond'>"
+			echo "<div class='geleachtergrond'>";
 		} elseif($afdeling == 'rakkers') {
-			echo "<div class='groeneachtergrond'>"
+			echo "<div class='groeneachtergrond'>";
 		} elseif($afdeling == 'toppers') {
-			echo "<div class='rodeachtergrond'>"
+			echo "<div class='rodeachtergrond'>";
 		} elseif($afdeling == 'kerels') {
-			echo "<div class='blauweachtergrond'>"
+			echo "<div class='blauweachtergrond'>";
 		} elseif($afdeling == 'aspiranten') {
-			echo "<div class='oranjeachtergrond'>"
+			echo "<div class='oranjeachtergrond'>";
 		} 
 		
 		$img = $rij['afbeelding'];
