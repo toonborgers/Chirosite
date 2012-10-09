@@ -5,7 +5,7 @@ create table new_leiding (
 	naam varchar(100) not null,
 	mail varchar(100) not null,
 	functies varchar(15),
-	afbeelding mediumblob not null
+	afbeeldingId int not null
 ) engine=innodb;
 
 create table new_functies (
