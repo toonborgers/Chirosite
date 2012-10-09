@@ -51,3 +51,5 @@ create table new_afbeelding (
 	type varchar(20) not null,
 	data mediumblob not null	
 ) engine=innodb;
+
+alter table new_leiding ADD CONSTRAINT fk_1 FOREIGN KEY (afbeeldingId) REFERENCES new_afbeelding (id);
