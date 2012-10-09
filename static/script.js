@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	$('#jongenslink').click(function(){
 		$('#mmenu').hide();
-		$('#jmenu').show();		
+		$('#jmenu').slideDown('slow');		
 	});
 	$('#meisjeslink').click(function(){
 		$('#jmenu').hide();		
-		$('#mmenu').show();
+		$('#mmenu').slideDown('slow');	
 	});
 });
