@@ -1,21 +1,9 @@
 <?php
 include_once "database/dbUtil.php";
-
 include_once "imageUtil.php";
 
-if(isset($_POST["bla"])){
+if(isset($_POST["bla"])){ 
 	addImage($_FILES["foto"]);
-	/*$allowedExts = array("jpg", "jpeg", "gif", "png");
-	$extension = end(explode(".", $_FILES["foto"]["name"]));
-	$fileType= $_FILES["foto"]["type"];
-	
-	if (($fileType == "image/gif" || $fileType == "image/jpeg" || $fileType == "image/png"|| $fileType == "image/pjpeg")
-		&& in_array($extension, $allowedExts)){			
-		$imgbinary = file_get_contents($_FILES['foto']['tmp_name']);
-		$encoded = base64_encode($imgbinary);
-		
-		echo doInsert("insert into new_afbeelding(type, data) values ('$fileType', '$encoded')");
-	}*/
 }
 
 ?>
