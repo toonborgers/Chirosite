@@ -1,4 +1,15 @@
 use chirokasterlee_;
+drop table if exists new_leiding_functie;
+drop table if exists new_afbeelding;
+drop table if exists new_functies;
+drop table if exists new_leiding;
+drop table if exists new_nieuws;
+drop table if exists new_programmas;
+drop table if exists new_kalender;
+drop table if exists new_kamp;
+drop table if exists new_login;
+
+
 create table new_leiding (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	chiro char not null,
@@ -6,6 +17,12 @@ create table new_leiding (
 	mail varchar(100) not null,
 	functies varchar(15),
 	afbeeldingId int not null
+) engine=innodb;
+
+create table new_leiding_functie (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	leidingId int not null,
+	functieId int not null
 ) engine=innodb;
 
 create table new_functies (
@@ -53,3 +70,5 @@ create table new_afbeelding (
 ) engine=innodb;
 
 alter table new_leiding ADD CONSTRAINT fk_1 FOREIGN KEY (afbeeldingId) REFERENCES new_afbeelding (id);
+alter table new_leiding_functie ADD CONSTRAINT fk_2 FOREIGN KEY (functieId) REFERENCES new_functies (id);
+alter table new_leiding_functie ADD CONSTRAINT fk_3 FOREIGN KEY (leidingId) REFERENCES new_leiding (id);
