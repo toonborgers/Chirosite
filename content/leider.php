@@ -25,11 +25,11 @@
 		} 
 		
 		$img = $rij['afbeelding'];
-		echo "<img src='data:image/jpeg;base64,'.base64_encode($image['file_data']).'' height='130' style='float:left;margin:10px;'>";
-		echo "$rij['naam'] <br />";
-		echo "$rij['email'] <br />";
-		echo "$rij['functies']"; 
-		echo "</div>"
+		echo "<img src='data:image/jpeg;base64,'".base64_encode($image['file_data'])." height='130' style='float:left;margin:10px;'>";
+		echo $rij['naam']."<br />";
+		echo $rij['email']."<br />";
+		echo $rij['functies']; 
+		echo "</div>";
 	}
 	
 ?>
