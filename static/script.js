@@ -24,8 +24,9 @@ function setUpShadowBox(){
 
 function setUpPortalLink() {
   $('#portalLink').click(function(){
+  		console.log(get('footer.html'));
 		Shadowbox.open({
-			content:    'tekst',
+			content:    get('footer.html'),
 			player:     "html",
 			title:      "Login",
 			height:     400,
@@ -33,3 +34,13 @@ function setUpPortalLink() {
 		});
   });
 }
+
+function get(urll){
+	var temp;
+	$.ajax({url: urll, 
+		success: function(data){temp = data;},
+		async: false
+		});	
+	return temp;
+}
+
