@@ -2,6 +2,7 @@
 	<span class="titletext">Leiders</span>
 </div>
 <div id="contenttext">
+	<span class="smalltitle">Sloebers</span>
 	<table>
 		<tr>
 			<td>
