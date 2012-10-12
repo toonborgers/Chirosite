@@ -7,7 +7,8 @@
 		$pages = array(
 			"home" => "home.php",
 			"jInfo" => "jInfo.php",
-			"jProg" => "jProg.php"
+			"jProg" => "jProg.php",
+			"portal" => "portal.php"
 		);
 
 		$page = isset($pages[$pageName])?  $pages[$pageName] : $pages["home"] ;
