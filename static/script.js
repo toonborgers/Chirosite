@@ -1,8 +1,10 @@
 $(document).ready(function() {
-	Shadowbox.init({
-		skipSetup: true
-	});
-	
+	setUpShadowBox();
+	setUpMenu();
+	setUpPortalLink();
+});
+
+function setUpMenu(){
 	$('#jongenslink').click(function(){
 		$('#mmenu').hide();
 		$('#jmenu').slideDown('slow');		
@@ -11,4 +13,23 @@ $(document).ready(function() {
 		$('#jmenu').hide();		
 		$('#mmenu').slideDown('slow');	
 	});
-});
+}
+
+function setUpShadowBox(){
+	Shadowbox.init({
+		skipSetup: true,
+		modal:true
+	});	
+}
+
+function setUpPortalLink() {
+  $('#portalLink').click(function(){
+		Shadowbox.open({
+			content:    tekst,
+			player:     "html",
+			title:      "Welcome",
+			height:     400,
+			width:      400
+		});
+  });
+}
