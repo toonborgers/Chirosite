@@ -25,9 +25,9 @@ function setUpShadowBox(){
 function setUpPortalLink() {
   $('#portalLink').click(function(){
 		Shadowbox.open({
-			content:    tekst,
+			content:    'tekst',
 			player:     "html",
-			title:      "Welcome",
+			title:      "Login",
 			height:     400,
 			width:      400
 		});
