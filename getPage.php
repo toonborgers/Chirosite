@@ -6,7 +6,8 @@
 		//hier nieuwe paginas zetten, dan op de link (in menu bvb): <a href="index.php?page=bla"/>
 		$pages = array(
 			"home" => "home.php",
-			"jInfo" => "jInfo.php"
+			"jInfo" => "jInfo.php",
+			"portal" => "portal.php"
 		);
 
 		$page = isset($pages[$pageName])?  $pages[$pageName] : $pages["home"] ;
