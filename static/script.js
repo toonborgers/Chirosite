@@ -24,7 +24,6 @@ function setUpShadowBox(){
 
 function setUpPortalLink() {
   $('#portalLink').click(function(){
-  		console.log(get('footer.html'));
 		Shadowbox.open({
 			content:    get('footer.html'),
 			player:     "html",
