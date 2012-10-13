@@ -18,19 +18,28 @@ function setUpMenu(){
 function setUpShadowBox(){
 	Shadowbox.init({
 		skipSetup: true,
-		modal:true
+		modal:true,
+		enableKeys:false
 	});	
 }
 
 function setUpPortalLink() {
   $('#portalLink').click(function(){
-		Shadowbox.open({
-			content:    get('footer.html'),
-			player:     "html",
-			title:      "Login",
-			height:     400,
-			width:      400
-		});
+  		$.post('ajaxHelp.php',{action:'isUserLoggedIn'},
+	  		function(data){
+	  			if(data == "1"){
+  					window.location = 'index.php?page=portal';
+	  			}else{
+					Shadowbox.open({
+						content:    get('login.html'),
+						player:     'html',
+						title:      'Login',
+						height:     400,
+						width:      400
+					});
+				}
+  			}
+  		);  		
   });
 }
 
