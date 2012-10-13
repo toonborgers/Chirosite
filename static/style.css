@@ -131,6 +131,8 @@ font-size: 1.2em;
 	background: -ms-linear-gradient(#A43FFD, #FFFFFF);
 	background: -o-linear-gradient(#A43FFD, #FFFFFF);
 	background: linear-gradient(#A43FFD, #FFFFFF);
+	-pie-background: linear-gradient(#A43FFD, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .geleachtergrond {
@@ -147,6 +149,8 @@ font-size: 1.2em;
 	background: -ms-linear-gradient(#FFFF00, #FFFFFF);
 	background: -o-linear-gradient(#FFFF00, #FFFFFF);
 	background: linear-gradient(#FFFF00, #FFFFFF);
+	-pie-background: linear-gradient(#FFFF00, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .groeneachtergrond {
@@ -163,6 +167,8 @@ font-size: 1.2em;
 	background: -ms-linear-gradient(#00FF00, #FFFFFF);
 	background: -o-linear-gradient(#00FF00, #FFFFFF);
 	background: linear-gradient(#00FF00, #FFFFFF);
+	-pie-background: linear-gradient(#00FF00, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .rodeachtergrond {
@@ -179,6 +185,8 @@ font-size: 1.2em;
 	background: -ms-linear-gradient(#FF0000, #FFFFFF);
 	background: -o-linear-gradient(#FF0000, #FFFFFF);
 	background: linear-gradient(#FF0000, #FFFFFF);
+	-pie-background: linear-gradient(#FF0000, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .blauweachtergrond {
@@ -195,6 +203,8 @@ font-size: 1.2em;
 	background: -ms-linear-gradient(#0000FF, #FFFFFF);
 	background: -o-linear-gradient(#0000FF, #FFFFFF);
 	background: linear-gradient(#0000FF, #FFFFFF);
+	-pie-background: linear-gradient(#0000FF, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .oranjeachtergrond {
@@ -211,4 +221,6 @@ font-size: 1.2em;
 	background: -ms-linear-gradient(#FF6600, #FFFFFF);
 	background: -o-linear-gradient(#FF6600, #FFFFFF);
 	background: linear-gradient(#FF6600, #FFFFFF);
+	-pie-background: linear-gradient(#FF6600, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
