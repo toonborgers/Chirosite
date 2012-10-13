@@ -118,7 +118,7 @@ font-size: 1.2em;
 }
 
 .paarseachtergrond {
-	width: 250px; height: 300px;
+	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
 	-webkit-box-shadow: #666 2px 2px 3px;
@@ -131,79 +131,96 @@ font-size: 1.2em;
 	background: -ms-linear-gradient(#A43FFD, #FFFFFF);
 	background: -o-linear-gradient(#A43FFD, #FFFFFF);
 	background: linear-gradient(#A43FFD, #FFFFFF);
+	-pie-background: linear-gradient(#A43FFD, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .geleachtergrond {
-	width: 60%; height: 150px;
-	color:#000000; 
-	font: 1em Tahoma, sans-serif;
-	margin:10px;
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #FFFF00 100%);
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #FFFF00 100%);
-	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #FFFF00 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #FFFF00));
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #FFFF00 100%);
-	background-image: linear-gradient(to top, #FFFFFF 0%, #FFFF00 100%);
-	border-radius:15px;
-	-moz-border-radius:15px;
+	padding: 20px;
+	border: 1px solid #696;
+	margin: 10px;
+	-webkit-box-shadow: #666 2px 2px 3px;
+	-moz-box-shadow: #666 2px 2px 3px;
+	box-shadow: #666 2px 2px 3px;
+	background: #FFFF00;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFF00), to(#FFFFFF));
+	background: -webkit-linear-gradient(#FFFF00, #FFFFFF);
+	background: -moz-linear-gradient(#FFFF00, #FFFFFF);
+	background: -ms-linear-gradient(#FFFF00, #FFFFFF);
+	background: -o-linear-gradient(#FFFF00, #FFFFFF);
+	background: linear-gradient(#FFFF00, #FFFFFF);
+	-pie-background: linear-gradient(#FFFF00, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .groeneachtergrond {
-	width: 60%; height: 150px;
-	color:#000000; 
-	font: 1em Tahoma, sans-serif;
-	margin:10px;
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #00FF00 100%);
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #00FF00 100%);
-	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #00FF00 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #00FF00));
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #00FF00 100%);
-	background-image: linear-gradient(to top, #FFFFFF 0%, #00FF00 100%);
-	border-radius:15px;
-	-moz-border-radius:15px;
+	padding: 20px;
+	border: 1px solid #696;
+	margin: 10px;
+	-webkit-box-shadow: #666 2px 2px 3px;
+	-moz-box-shadow: #666 2px 2px 3px;
+	box-shadow: #666 2px 2px 3px;
+	background: #00FF00;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#00FF00), to(#FFFFFF));
+	background: -webkit-linear-gradient(#00FF00, #FFFFFF);
+	background: -moz-linear-gradient(#00FF00, #FFFFFF);
+	background: -ms-linear-gradient(#00FF00, #FFFFFF);
+	background: -o-linear-gradient(#00FF00, #FFFFFF);
+	background: linear-gradient(#00FF00, #FFFFFF);
+	-pie-background: linear-gradient(#00FF00, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .rodeachtergrond {
-	width: 60%; height: 150px;
-	color:#000000; 
-	font: 1em Tahoma, sans-serif;
-	margin:10px;
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #FF0000 100%);
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%,#FF0000 100%);
-	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #FF0000 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #FF0000));
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #FF0000 100%);
-	background-image: linear-gradient(to top, #FFFFFF 0%, #FF0000 100%);
-	border-radius:15px;
-	-moz-border-radius:15px;
+	padding: 20px;
+	border: 1px solid #696;
+	margin: 10px;
+	-webkit-box-shadow: #666 2px 2px 3px;
+	-moz-box-shadow: #666 2px 2px 3px;
+	box-shadow: #666 2px 2px 3px;
+	background: #FF0000;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FF0000), to(#FFFFFF));
+	background: -webkit-linear-gradient(#FF0000, #FFFFFF);
+	background: -moz-linear-gradient(#FF0000, #FFFFFF);
+	background: -ms-linear-gradient(#FF0000, #FFFFFF);
+	background: -o-linear-gradient(#FF0000, #FFFFFF);
+	background: linear-gradient(#FF0000, #FFFFFF);
+	-pie-background: linear-gradient(#FF0000, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .blauweachtergrond {
-	width: 60%; height: 150px;
-	color:#000000; 
-	font: 1em Tahoma, sans-serif;
-	margin:10px;
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #0000FF 100%);
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #0000FF 100%);
-	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #0000FF 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #0000FF));
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #0000FF 100%);
-	background-image: linear-gradient(to top, #FFFFFF 0%, #0000FF 100%);
-	border-radius:15px;
-	-moz-border-radius:15px;
+	padding: 20px;
+	border: 1px solid #696;
+	margin: 10px;
+	-webkit-box-shadow: #666 2px 2px 3px;
+	-moz-box-shadow: #666 2px 2px 3px;
+	box-shadow: #666 2px 2px 3px;
+	background: #0000FF;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#0000FF), to(#FFFFFF));
+	background: -webkit-linear-gradient(#0000FF, #FFFFFF);
+	background: -moz-linear-gradient(#0000FF, #FFFFFF);
+	background: -ms-linear-gradient(#0000FF, #FFFFFF);
+	background: -o-linear-gradient(#0000FF, #FFFFFF);
+	background: linear-gradient(#0000FF, #FFFFFF);
+	-pie-background: linear-gradient(#0000FF, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .oranjeachtergrond {
-	width: 60%; height: 150px;
-	color:#000000; 
-	font: 1em Tahoma, sans-serif;
-	margin:10px;
-	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #FF6600 100%);
-	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #FF6600 100%);
-	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #FF6600 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #FF6600));
-	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #FF6600 100%);
-	background-image: linear-gradient(to top, #FFFFFF 0%, #FF6600 100%);
-	border-radius:15px;
-	-moz-border-radius:15px;
+	padding: 20px;
+	border: 1px solid #696;
+	margin: 10px;
+	-webkit-box-shadow: #666 2px 2px 3px;
+	-moz-box-shadow: #666 2px 2px 3px;
+	box-shadow: #666 2px 2px 3px;
+	background: #FF6600;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FF6600), to(#FFFFFF));
+	background: -webkit-linear-gradient(#FF6600, #FFFFFF);
+	background: -moz-linear-gradient(#FF6600, #FFFFFF);
+	background: -ms-linear-gradient(#FF6600, #FFFFFF);
+	background: -o-linear-gradient(#FF6600, #FFFFFF);
+	background: linear-gradient(#FF6600, #FFFFFF);
+	-pie-background: linear-gradient(#FF6600, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }

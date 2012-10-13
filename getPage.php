@@ -7,6 +7,7 @@
 		$pages = array(
 			"home" => "home.php",
 			"jInfo" => "jInfo.php",
+			"jProg" => "jProg.php",
 			"portal" => "portal.php"
 		);
 
