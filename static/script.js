@@ -2,6 +2,7 @@ $(document).ready(function() {
 	setUpShadowBox();
 	setUpMenu();
 	setUpPortalLink();
+	setUpCalendarFields();
 });
 
 function setUpMenu(){
@@ -52,3 +53,13 @@ function get(urll){
 	return temp;
 }
 
+function setUpCalendarFields(){
+	$('.calendar').datepicker({
+		showOn: "button",
+		buttonImage: "static/images/calendar.gif",
+		buttonImageOnly: true,
+		dateFormat: 'dd-mm-yy'
+	}).mask('99-99-9999');
+	
+	$('.ui-datepicker-trigger').css('cursor','pointer').attr({alt:'', title:''});
+}

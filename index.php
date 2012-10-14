@@ -8,6 +8,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" type="text/css" />
 		<script type="text/javascript" src="static/script.js"></script>
 		<script type="text/javascript" src="static/shadowbox/shadowbox.js"></script>
 		<title>Chiro Kasterlee</title>

@@ -1,6 +1,6 @@
 <?php
 include_once "database/dbUtil.php";
-include_once "imageUtil.php";
+include_once "database/imageUtil.php";
 
 if(isset($_POST["bla"])){ 
 	addImage($_FILES["foto"]);
@@ -30,7 +30,7 @@ if(isset($_POST["bla"])){
 					dateFormat: 'dd-mm-yy'
 				}).mask('99-99-9999');
 				
-				$('.ui-datepicker-trigger').css('cursor','pointer').attr('alt','').attr('title','');
+				$('.ui-datepicker-trigger').css('cursor','pointer').attr({alt:'', title:''});
 			}
 		</script>
 	</head>
