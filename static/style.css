@@ -117,7 +117,7 @@ font-size: 1.2em;
 	text-decoration:underline;
 }
 
-.paarseachtergrond {
+.paarseachtergrond, .achtergrondSloebers {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
@@ -135,7 +135,7 @@ font-size: 1.2em;
 	behavior: url(static/PIE.htc);
 }
 
-.geleachtergrond {
+.geleachtergrond, .achtergrondSpeelclub {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
@@ -153,7 +153,7 @@ font-size: 1.2em;
 	behavior: url(static/PIE.htc);
 }
 
-.groeneachtergrond {
+.groeneachtergrond, .achtergrondRakkers {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
@@ -171,7 +171,7 @@ font-size: 1.2em;
 	behavior: url(static/PIE.htc);
 }
 
-.rodeachtergrond {
+.rodeachtergrond, .achtergrondToppers {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
@@ -189,7 +189,7 @@ font-size: 1.2em;
 	behavior: url(static/PIE.htc);
 }
 
-.blauweachtergrond {
+.blauweachtergrond, .achtergrondKerels {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
@@ -207,7 +207,7 @@ font-size: 1.2em;
 	behavior: url(static/PIE.htc);
 }
 
-.oranjeachtergrond {
+.oranjeachtergrond, .achtergrondAspiranten {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;

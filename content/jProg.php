@@ -3,33 +3,18 @@
 </div>
 <div class="bodytext" style="padding:12px; width:80%; color:#000000" align="center">
 	<?php
-    
-    	$sql = "SELECT Nr, Datum, Programma FROM tblJProg ORDER BY Nr ASC";
-		//later wordt dit natuurlijk veranderd naar new_programmas, nu enkel testen
-		$programmas = doSelectForMultipleResults($sql);	
+		$queryResult = doSelectForSingleResult('SELECT DISTINCT date_format(datum, "%d-%c-%Y") datum FROM new_programmas;');
+		$datum = $queryResult['datum'];
+		echo "<span class='smalltitle'>Datum: ". $datum . "</span><br/>";
 		
-		foreach ($programmas as $rij) {
-				
-			if($rij["Nr"]==1) {
-				echo "<span class='smalltitle'>Sloebers</span><div class='paarseachtergrond'>";
-			} elseif($rij["Nr"]==2) {
-				echo "<span class='smalltitle'>Speelclub</span><br /><div class='geleachtergrond'>";
-			} elseif($rij["Nr"]==3) {
-				echo "<span class='smalltitle'>Rakkers</span><br /><div class='groeneachtergrond'>";
-			} elseif($rij["Nr"]==4) {
-				echo "<span class='smalltitle'>Toppers</span><br /><div class='rodeachtergrond'>";
-			} elseif($rij["Nr"]==5) {
-				echo "<span class='smalltitle'>Kerels</span><br /><div class='blauweachtergrond'>";
-			} elseif($rij["Nr"]==6) {
-				echo "<span class='smalltitle'>Aspiranten</span><br /><div class='oranjeachtergrond'>";
-			} 
-			
-			echo $rij["Datum"] .": ".$rij["Programma"];
+		$groepen = array(1=>"Sloebers", 2=>"Speelclub", 3=>"Rakkers", 4=>"Toppers", 5=>"Kerels", 6 =>"Aspiranten");
+		$programmas = doSelectForMultipleResults('SELECT * FROM new_programmas WHERE chiro="j" ORDER BY groep;');
+
+    	foreach($programmas as $programma){
+    		$groep = $groepen[$programma["groep"]];
+    		echo "<span class='smalltitle'>". $groep . "</span><br /><div class='achtergrond". $groep ."'>";
+    		echo $programma["programma"];
 			echo "</div>";
-		}
-	?>
-	<?php
-    	include "../database/programmas.php";
-		//op de één of andere manier wilt dees nie werke
+    	}
 	?>
 </div>
