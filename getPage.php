@@ -11,7 +11,7 @@
 			"portal" => "portal.php"
 		);
 
-		$page = isset($pages[$pageName])?  $pages[$pageName] : $pages["home"] ;
+		$page = isset($pages[$pageName]) ? $pages[$pageName] : $pages["home"] ;
 	
 	}
 	include "content/" . $page;

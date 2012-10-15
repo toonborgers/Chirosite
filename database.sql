@@ -40,6 +40,7 @@ create table new_programmas (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	chiro char not null,
 	datum date not null,
+	groep int not null,
 	programma varchar(100) not null	
 ) engine=innodb;
 
