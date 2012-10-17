@@ -9,6 +9,7 @@
 			"jInfo" => "jInfo.php",
 			"jProg" => "jProg.php",
 			"jHuren" => "jHuren.html",
+			"jKamp" => "jKamp.php",
 			"portal" => "portal.php",
 			"contact" => "contact.html"
 		);
