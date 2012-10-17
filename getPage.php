@@ -8,6 +8,7 @@
 			"home" => "home.php",
 			"jInfo" => "jInfo.php",
 			"jProg" => "jProg.php",
+			"jHuren" => "jHuren.html",
 			"portal" => "portal.php",
 			"contact" => "contact.html"
 		);
