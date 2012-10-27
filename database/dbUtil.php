@@ -9,4 +9,4 @@
 		$mysqli = new mysqli($server, $username, $password, $database);
 		$mysqli->query("SET NAMES utf8");
 		if(!$mysqli->query($sql)){			$mysqli->rollback(); 			return -1;		}
-		$id = $mysqli->insert_id;		$mysqli->commit();		$mysqli->close();		return $id;	}?>
+		$id = $mysqli->insert_id;		$mysqli->commit();		$mysqli->close();		return $id;	}		/*	 * Verwijdert shit	 */	 	function delete($sql) {		$username = "chirokasterlee_";		$password = "EUgCvQxY";		$database = "chirokasterlee_";		$server = "chirokasterlee.be.mysql";		$mysqli = new mysqli($server, $username, $password, $database);				$mysqli->query("SET NAMES utf8");		$mysqli->query($sql);		$mysqli->commit();		$mysqli->close();	}?>
