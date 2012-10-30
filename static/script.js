@@ -35,8 +35,8 @@ function setUpPortalLink() {
 						content:    get('login.html'),
 						player:     'html',
 						title:      'Login',
-						height:     400,
-						width:      400
+						width:		400,
+						height:		200
 					});
 				}
   			}
