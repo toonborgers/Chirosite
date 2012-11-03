@@ -15,7 +15,7 @@ create table new_leiding (
 	chiro char not null,
 	naam varchar(100) not null,
 	mail varchar(100) not null,
-	functies varchar(15),
+	groep char not null,
 	afbeeldingId int not null
 ) engine=innodb;
 
