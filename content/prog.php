@@ -13,7 +13,7 @@
 		} else {
 			$groepen = array(1=>"Pinkels", 2=>"Speelclub", 3=>"Kwiks", 4=>"Tippers", 5=>"Tiptiens", 6 =>"Aspi's");
 		}
-		$programmas = doSelectForMultipleResults("SELECT * FROM new_programmas WHERE chiro=$chiro ORDER BY groep;");
+		$programmas = doSelectForMultipleResults("SELECT * FROM new_programmas WHERE chiro='$chiro' ORDER BY groep;");
 
     	foreach($programmas as $programma){
     		$groep = $groepen[$programma["groep"]];
