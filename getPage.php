@@ -8,10 +8,10 @@
 			"home" => "home.php",
 			"jInfo" => "jInfo.php",
 			"jProg" => "jProg.php",
-			"jHuren" => "jHuren.html",
+			"jHuren" => "jHuren.php",
 			"jKamp" => "jKamp.php",
 			"portal" => "portal.php",
-			"contact" => "contact.html"
+			"contact" => "contact.php"
 		);
 
 		$page = isset($pages[$pageName]) ? $pages[$pageName] : $pages["home"] ;
