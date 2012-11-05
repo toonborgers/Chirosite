@@ -7,9 +7,9 @@
 		$pages = array(
 			"home" => "home.php",
 			"info" => "info.php",
-			"jProg" => "jProg.php",
+			"prog" => "prog.php",
 			"jHuren" => "jHuren.php",
-			"jKamp" => "jKamp.php",
+			"kamp" => "kamp.php",
 			"portal" => "portal.php",
 			"contact" => "contact.php"
 		);
