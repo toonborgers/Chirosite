@@ -1,4 +1,4 @@
-<div style="padding:10px">
+<div class="titlecontainer">
 	<span class="titletext">Programma's</span>
 </div>
 <div class="bodytext" style="padding:12px; width:80%; color:#000000" align="center">

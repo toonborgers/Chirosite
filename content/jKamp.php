@@ -1,4 +1,6 @@
-<span class="titletext">Kamp</span>
+<div class="titlecontainer">
+	<span class="titletext">Kamp</span>
+</div>
 <div class="bodytext">
 	<?php
 		$queryResult = doSelectForSingleResult('SELECT adres, tekst FROM new_kamp WHERE chiro="j";');

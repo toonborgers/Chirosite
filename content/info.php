@@ -1,4 +1,4 @@
-<div style="padding:10px">
+<div class="titlecontainer">
 	<span class="titletext">Leiders</span>
 </div>
 <div class="bodytext">

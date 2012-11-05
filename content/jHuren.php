@@ -1,4 +1,6 @@
-<span class="titletext">Huren</span>
+<div class="titlecontainer">
+	<span class="titletext">Huren</span>
+</div>
 <div class="bodytext">
 	<span class="smalltitle">Lokalen</span><br />
 	In 2011 hebben wij de laatste steen gelegd aan ons nieuw lokaal, dit wordt verhuurd sinds 2012.

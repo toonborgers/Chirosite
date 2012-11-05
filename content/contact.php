@@ -1,4 +1,6 @@
-<span class="titletext">Contact</span>
+<div class="titlecontainer">
+	<span class="titletext">Contact</span>
+</div>
 <div class="bodytext">
 	<span class="smalltitle">Jongens</span>
 	<br />

@@ -63,8 +63,9 @@
 	 $jProgrammas = getProgrammas('j');
 	 $mProgrammas = getProgrammas('m');
 ?>
-
-<span class="titletext">Portal</span>
+<div class="titlecontainer">
+	<span class="titletext">Portal</span>
+</div>
 <div class="bodytext" style="padding:12px;" align="center">
 	<span class="smalltitle">Nieuws</span><br />
 	<?php echo $nieuwsTabel ?>
