@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	$page = "home.php";
 	if(isset($_GET["page"])){
 		$pageName= $_GET["page"];
@@ -13,9 +14,13 @@
 			"portal" => "portal.php",
 			"contact" => "contact.php"
 		);
+		
+		$securedPages = array("portal");
 
-		$page = isset($pages[$pageName]) ? $pages[$pageName] : $pages["home"] ;
-	
+		$page = array_key_exists ($pageName, $pages) ? $pages[$pageName] : $pages["home"] ;
+		
+		if(in_array($pageName, $securedPages) && !isset($_SESSION['login']) ){
+			$page = "home.php";
+		}
 	}
-	include "content/" . $page;
 ?>

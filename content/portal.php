@@ -5,9 +5,9 @@
 	 * Juiste logingegevens?
 	 */
 	session_start();
+	
 	if(!isset($_SESSION['login'])){
-		
-		if(!isset($_POST['login'])||!isset($_POST['password'])){
+		if(!isset($_POST['login']) || !isset($_POST['password'])){
 			header('location: http://chirokasterleee.be/newsite/index.php');
 		}else{			
 			$login = $_POST['login'];

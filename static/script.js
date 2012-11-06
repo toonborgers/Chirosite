@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	setUpShadowBox();
 	setUpMenu();
-	setUpPortalLink();
 	setUpCalendarFields();
 });
 
@@ -24,24 +23,18 @@ function setUpShadowBox(){
 	});	
 }
 
-function setUpPortalLink() {
-  $('#portalLink').click(function(){
-  		$.post('ajaxHelp.php',{action:'isUserLoggedIn'},
-	  		function(data){
-	  			if(data == "1"){
-  					window.location = 'index.php?page=portal';
-	  			}else{
-					Shadowbox.open({
-						content:    get('login.html'),
-						player:     'html',
-						title:      'Login',
-						width:		400,
-						height:		200
-					});
-				}
-  			}
-  		);  		
-  });
+function showLogin(redirectImmediately){
+	if(redirectImmediately===1){
+		window.location = 'index.php?page=portal';
+	}else{
+		Shadowbox.open({
+			content:    get('login.html'),
+			player:     'html',
+			title:      'Login',
+			width:		400,
+			height:		200
+		});
+	}
 }
 
 function get(urll){

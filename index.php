@@ -2,6 +2,7 @@
 <?php 
 	include_once "database/dbUtil.php";
 	include_once "database/imageUtil.php";
+	include_once "getPage.php";
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -21,9 +22,9 @@
 			<div id="content" style="width:800px">
 				<?php include("./nav.html"); ?>
 				<div id="contenttext">
-					<?php include "getPage.php";?>				
+					<?php include 'content/'.$page;?>				
 				</div>			
-				<?php include("./footer.html"); ?>
+				<?php include("./footer.php"); ?>
 			</div>
 		</div>
 	</body>
