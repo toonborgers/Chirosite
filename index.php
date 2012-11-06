@@ -1,5 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php 
+	session_start();
+	print_r($_SESSION);
 	include_once "database/dbUtil.php";
 	include_once "database/imageUtil.php";
 	include_once "getPage.php";

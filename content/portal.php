@@ -1,27 +1,4 @@
 <?php 
-	include_once '../database/dbUtil.php';
-	
-	/*
-	 * Juiste logingegevens?
-	 */
-	session_start();
-	
-	if(!isset($_SESSION['login'])){
-		if(!isset($_POST['login']) || !isset($_POST['password'])){
-			header('location: http://chirokasterleee.be/newsite/index.php');
-		}else{			
-			$login = $_POST['login'];
-			$password = $_POST['password'];
-			$beep = doSelectForSingleResult("SELECT * FROM new_login WHERE login='$login' and wachtwoord='$password'");
-			
-			if(count($beep)==0){
-				header('location: http://chirokasterleee.be/newsite/index.php');
-			}else{
-				$_SESSION['login'] = $login;
-			}
-		}
-	}
-	
 	/*
 	 * Nieuws opvragen
 	 */
