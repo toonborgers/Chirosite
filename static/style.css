@@ -125,6 +125,11 @@ font-size: 1.2em;
 	text-align: center;
 }
 
+textarea.bigger {
+	width:500px;
+	height:50px;
+}
+
 .achtergrondSloebers, .achtergrondPinkels {
 	padding: 20px;
 	border: 1px solid #696;

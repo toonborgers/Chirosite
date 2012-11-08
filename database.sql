@@ -40,7 +40,7 @@ create table new_programmas (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	chiro char not null,
 	datum date not null,
-	groep int not null,
+	groep char not null,
 	programma varchar(100) not null	
 ) engine=innodb;
 
@@ -61,7 +61,8 @@ create table new_kamp (
 create table new_login (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	login varchar(20) not null,
-	wachtwoord varchar(32) not null	
+	wachtwoord varchar(32) not null,
+	chiro char not null
 ) engine=innodb;
 
 create table new_afbeelding (
