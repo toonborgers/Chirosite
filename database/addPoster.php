@@ -1,6 +1,5 @@
 <?php
     include_once 'imageUtil.php';
-	$poster = $_POST["poster"];
-	addImage($poster); //Hie zit nog iet nie goe
+	addImage($_FILES["poster"]); //dafuq wrm werkt da nie
 	header("Location: ../index.php?page=portal");
 ?>

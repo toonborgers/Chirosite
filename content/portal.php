@@ -5,9 +5,9 @@
 	 */
 	$sql = "SELECT DATE_FORMAT(datum, '%e/%m/%Y') as datum, bericht, id FROM new_nieuws ORDER BY datum DESC";
 	$berichten = doSelectForMultipleResults($sql);
-	$nieuwsTabel = "<table border='0'><tr><th>Datum</th><th>Bericht</th><th></th></tr>";
+	$nieuwsTabel = "<table>";
 	foreach($berichten as $bericht){
-    	$nieuwsTabel .= "<tr><td>".$bericht["datum"] . "</td><td>" . $bericht["bericht"] . "</td><td align='center'><a href=\"database/deleteNieuws.php?id=". $bericht["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
+    	$nieuwsTabel .= "<tr><td style='padding-right:10px'>".$bericht["datum"] . "</td><td style='padding-right:10px'>" . $bericht["bericht"] . "</td><td align='center'><a href=\"database/deleteNieuws.php?id=". $bericht["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
 		</span></a></td></tr>";
 	}
 	$nieuwsTabel.="</table>";
@@ -22,7 +22,7 @@
 	include_once '../database/imageUtil.php';
 	$sql = "SELECT id FROM new_afbeelding WHERE id NOT IN (SELECT afbeeldingId FROM new_leiding)";
 	$posterIds = doSelectForMultipleResults($sql);
-	$posterTabel = "<table border='0'><tr><th>Poster</th><th>Verwijder</th></tr>";
+	$posterTabel = "<table>";
 	foreach($posterIds as $posterId){
     	$posterTabel .= "<tr><td><img src=".getImage($posterId["id"])." width='60'></td><td align='center'><a href=\"database/deletePoster.php?id=". $posterId["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
 		</span></a></td></tr>";
@@ -43,9 +43,9 @@
 	 * Groepen
 	 */
 	if($chiro=='j') {
-		$groepen = array(1=>"Sloebers", 2=>"Speelclub", 3=>"Rakkers", 4=>"Toppers", 5=>"Kerels", 6 =>"Aspiranten");
+		$groepen = array(0=>"Algemeen", 1=>"Sloebers", 2=>"Speelclub", 3=>"Rakkers", 4=>"Toppers", 5=>"Kerels", 6 =>"Aspiranten");
 	} else {
-		$groepen = array(1=>"Pinkels", 2=>"Speelclub", 3=>"Kwiks", 4=>"Tippers", 5=>"Tiptiens", 6 =>"Aspi's");
+		$groepen = array(0=>"Algemeen", 1=>"Pinkels", 2=>"Speelclub", 3=>"Kwiks", 4=>"Tippers", 5=>"Tiptiens", 6 =>"Aspi's");
 	}
 	
 	/*
@@ -79,22 +79,13 @@
 	
 	<span class="smalltitle">Programma's</span><br />
 	<form action="database/addProgrammas.php?chiro=<?php echo $chiro ?>" method="post">
-		<table>
-			<!--kan in een loop worden gezet mbv php -->
-			<tr><td><label for="1"><?php echo $groepen[1] ?></label></td><td>
-				<textarea class="bigger" maxlength="100" name="1"><?php echo $programmaArray[1] ?></textarea></td></tr>
-			<tr><td><label for="2">Speelclub</label></td><td>
-				<textarea class="bigger" maxlength="100" name="2"><?php echo $programmaArray[2] ?></textarea></td></tr>
-			<tr><td><label for="3">Rakkers</label></td><td>
-				<textarea class="bigger" maxlength="100" name="3"><?php echo $programmaArray[3] ?></textarea></td></tr>
-			<tr><td><label for="4">Toppers</label></td><td>
-				<textarea class="bigger" maxlength="100" name="4"><?php echo $programmaArray[4] ?></textarea></td></tr>
-			<tr><td><label for="5">Kerels</label></td><td>
-				<textarea class="bigger" maxlength="100" name="5"><?php echo $programmaArray[5] ?></textarea></td></tr>
-			<tr><td><label for="6">Aspiranten</label></td><td>
-				<textarea class="bigger" maxlength="100" name="6"><?php echo $programmaArray[6] ?></textarea></td></tr>
-			<tr><td><label for="0">Algemeen</label></td><td>
-				<textarea class="bigger" maxlength="100" name="0"><?php echo $programmaArray[0] ?></textarea></td></tr>
+		<table><tr><td><label for = "datum">Datum</label></td><td><input type="date" name="datum"></td></tr>
+			<?php
+				for ($i=0; $i < 7; $i++) { 
+					echo "<tr><td><label for='$i'>$groepen[$i]</label></td><td>
+					<textarea class='bigger' maxlength='100' name='$i'>$programmaArray[$i]</textarea></td></tr>";
+				}
+			?>
 		</table>
 		<input type="submit" value="Verander programma's">
 	</form>
