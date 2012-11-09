@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<div id="page" align="center">
-			<div id="content" style="width:800px">
+			<div id="wrapper">
 				<?php include("./nav.html"); ?>
 				<div id="contenttext">
 					<?php include 'content/'.$page;?>				

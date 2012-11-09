@@ -5,7 +5,7 @@
 	 */
 	$sql = "SELECT DATE_FORMAT(datum, '%e/%m/%Y') as datum, bericht, id FROM new_nieuws ORDER BY datum DESC";
 	$berichten = doSelectForMultipleResults($sql);
-	$nieuwsTabel = "<table border='0'><tr><th>Datum</th><th>Bericht</th><th>Verwijder</th></tr>";
+	$nieuwsTabel = "<table border='0'><tr><th>Datum</th><th>Bericht</th><th></th></tr>";
 	foreach($berichten as $bericht){
     	$nieuwsTabel .= "<tr><td>".$bericht["datum"] . "</td><td>" . $bericht["bericht"] . "</td><td align='center'><a href=\"database/deleteNieuws.php?id=". $bericht["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
 		</span></a></td></tr>";
