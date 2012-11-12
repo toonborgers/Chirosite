@@ -2,6 +2,7 @@ $(document).ready(function() {
 	setUpShadowBox();
 	setUpMenu();
 	setUpCalendarFields();
+	setupLoginValidation();
 });
 
 function setUpMenu(){
@@ -27,23 +28,8 @@ function showLogin(redirectImmediately){
 	if(redirectImmediately===1){
 		window.location = 'index.php?page=portal';
 	}else{
-		Shadowbox.open({
-			content:    get('login.html'),
-			player:     'html',
-			title:      'Login',
-			width:		400,
-			height:		200
-		});
+		$('#loginForm').slideDown('slow');	
 	}
-}
-
-function get(urll){
-	var temp;
-	$.ajax({url: urll, 
-		success: function(data){temp = data;},
-		async: false
-		});	
-	return temp;
 }
 
 function setUpCalendarFields(){
@@ -55,4 +41,17 @@ function setUpCalendarFields(){
 	}).mask('99-99-9999');
 	
 	$('.ui-datepicker-trigger').css('cursor','pointer').attr({alt:'', title:''});
+}
+
+function setupLoginValidation(){
+	$("#login").validate({
+		rules: {
+			login: "required",
+			password: "required"
+			
+		}, 
+		messages: { 
+		
+		} 
+	}); 
 }

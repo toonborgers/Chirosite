@@ -24,8 +24,12 @@ body {
 	font-family: Tahoma, sans-serif;
 }
 
-#jmenu{
-	display:none;
+body{
+	font-family: Tahoma, sans-serif;
+}
+
+#jmenu, #mmenu, #loginForm{
+	display: none;
 }
 
 #mmenu{
