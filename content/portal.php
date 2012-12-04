@@ -1,14 +1,13 @@
 <?php 
-
 	/*
 	 * Nieuws opvragen
 	 * $nieuwsTabel geeft een volledig opgemaakte tabel inclusief een verwijder-button
 	 */
-	$sql = "SELECT DATE_FORMAT(datum, '%e/%m/%Y') as datum, bericht, id FROM new_nieuws ORDER BY datum DESC";
+	$sql = "SELECT datum, bericht, id FROM new_nieuws ORDER BY datum DESC";
 	$berichten = doSelectForMultipleResults($sql);
 	$nieuwsTabel = "<table>";
 	foreach($berichten as $bericht){
-    	$nieuwsTabel .= "<tr><td style='padding-right:10px'>".$bericht["datum"] . "</td><td style='padding-right:10px'>" . $bericht["bericht"] . "</td><td align='center'><a href=\"database/deleteNieuws.php?id=". $bericht["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
+    	$nieuwsTabel .= "<tr><td style='padding-right:10px'>".date("d/m",strtotime($bericht["datum"])). "</td><td style='padding-right:10px'>" . $bericht["bericht"] . "</td><td align='center'><a href=\"database/deleteNieuws.php?id=". $bericht["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
 		</span></a></td></tr>";
 	}
 	$nieuwsTabel.="</table>";

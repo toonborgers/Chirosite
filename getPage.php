@@ -14,14 +14,10 @@
 			"contact" => array("contact.php", false)
 		);
 		
-		$page = array_key_exists ($pageName, $pages) ? $pages[$pageName][0] : "home.php";
-		
 		if(array_key_exists ($pageName, $pages)){
-			$page = $pages[$pageName][0];
-			
-			if($pages[$pageName][0] && !isset($_SESSION['login'])){
-				$page = "home.php";
-			}
+			if(!$pages[$pageName][1] || isset($_SESSION['login'])) {
+				$page = $pages[$pageName][0];
+			} 
 		}
 	}
 ?>

@@ -8,5 +8,5 @@
 		delete("DELETE FROM new_programmas WHERE groep='$i';");
 		doInsert("INSERT INTO new_programmas VALUES (NULL , '$chiro' , '$datum' , '$i' , '$programma');");
 	}
-	//header("Location: ../index.php?page=portal");
+	header("Location: ../index.php?page=portal");
 ?>

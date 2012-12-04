@@ -8,11 +8,11 @@ $(document).ready(function() {
 function setUpMenu(){
 	$('#jongenslink').click(function(){
 		$('#mmenu').hide();
-		$('#jmenu').slideDown('slow');		
+		$('#jmenu').slideDown('fast');		
 	});
 	$('#meisjeslink').click(function(){
 		$('#jmenu').hide();		
-		$('#mmenu').slideDown('slow');	
+		$('#mmenu').slideDown('fast');	
 	});
 }
 

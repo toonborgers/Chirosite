@@ -1,7 +1,6 @@
 <?php
 	include_once 'dbUtil.php';
 	include_once 'imageUtil.php';
-	$chiro = $_GET["chiro"];
 	
 	if($chiro=='j') {
 		$groepen = array(1=>"Sloebers", 2=>"Speelclub", 3=>"Rakkers", 4=>"Toppers", 5=>"Kerels", 6 =>"Aspiranten");

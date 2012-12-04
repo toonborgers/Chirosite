@@ -28,12 +28,8 @@ body{
 	font-family: Tahoma, sans-serif;
 }
 
-#jmenu, #mmenu, #loginForm{
+#jmenu, #mmenu, #loginForm {
 	display: none;
-}
-
-#mmenu{
-	display:none;
 }
 
 /*GRAY PANEL*/
@@ -151,6 +147,7 @@ textarea.bigger {
 	background: linear-gradient(#A43FFD, #FFFFFF);
 	-pie-background: linear-gradient(#A43FFD, #FFFFFF);
 	behavior: url(static/PIE.htc);
+	color:#000000;
 }
 
 .achtergrondSpeelclub {
@@ -169,6 +166,7 @@ textarea.bigger {
 	background: linear-gradient(#FFFF00, #FFFFFF);
 	-pie-background: linear-gradient(#FFFF00, #FFFFFF);
 	behavior: url(static/PIE.htc);
+	color:#000000;
 }
 
 .achtergrondRakkers, .achtergrondKwiks{
@@ -187,6 +185,7 @@ textarea.bigger {
 	background: linear-gradient(#00FF00, #FFFFFF);
 	-pie-background: linear-gradient(#00FF00, #FFFFFF);
 	behavior: url(static/PIE.htc);
+	color:#000000;
 }
 
 .achtergrondToppers, .achtergrondTippers{
@@ -205,6 +204,7 @@ textarea.bigger {
 	background: linear-gradient(#FF0000, #FFFFFF);
 	-pie-background: linear-gradient(#FF0000, #FFFFFF);
 	behavior: url(static/PIE.htc);
+	color:#000000;
 }
 
 .achtergrondKerels, .achtergrondTiptiens {
@@ -223,9 +223,10 @@ textarea.bigger {
 	background: linear-gradient(#0000FF, #FFFFFF);
 	-pie-background: linear-gradient(#0000FF, #FFFFFF);
 	behavior: url(static/PIE.htc);
+	color:#000000;
 }
 
-.achtergrondAspiranten .achtergrondAspi's {
+.achtergrondAspiranten, .achtergrondAspis {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
@@ -241,4 +242,5 @@ textarea.bigger {
 	background: linear-gradient(#FF6600, #FFFFFF);
 	-pie-background: linear-gradient(#FF6600, #FFFFFF);
 	behavior: url(static/PIE.htc);
+	color:#000000;
 }
