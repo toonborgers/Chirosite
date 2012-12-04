@@ -1,5 +1,5 @@
 <?php
-    include_once 'imageUtil.php';
-	addImage($_FILES["poster"]); //dafuq wrm werkt da nie
+	include_once 'imageUtil.php';
+	echo addImage($_FILES["poster"]);
 	header("Location: ../index.php?page=portal");
 ?>

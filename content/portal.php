@@ -1,4 +1,5 @@
 <?php 
+
 	/*
 	 * Nieuws opvragen
 	 * $nieuwsTabel geeft een volledig opgemaakte tabel inclusief een verwijder-button
@@ -68,22 +69,24 @@
 	<span class="smalltitle">Nieuws</span><br />
 	<?php echo $nieuwsTabel ?>
 	<form action="database/addNieuws.php" method="post">
-		<textarea class="bigger" maxlength="100" name="bericht"></textarea><br /><input type="submit" value="Voeg nieuwsbericht toe">
+		<textarea class="bigger" maxlength="500" name="bericht"></textarea><br /><input type="submit" value="Voeg nieuwsbericht toe" />
 	</form><br />
 	
 	<span class="smalltitle">Poster</span><br />
 	<?php echo $posterTabel ?>
-	<form action="database/addPoster.php" method="post">
-		<input type="file" name="poster"><br /><input type="submit" value="Voeg poster toe">
+	<form enctype="multipart/form-data" action="database/addPoster.php" method="post">
+		<input type="file" name="poster" /><br />
+		<input type="submit" value="Voeg poster toe" />
 	</form><br />
 	
 	<span class="smalltitle">Programma's</span><br />
 	<form action="database/addProgrammas.php?chiro=<?php echo $chiro ?>" method="post">
-		<table><tr><td><label for = "datum">Datum</label></td><td><input type="date" name="datum"></td></tr>
+		<table><tr><td><label for = "datum">Datum</label></td>
+			<td><input type="date" name="datum" value=<?php echo date('Y-m-d', strtotime("Next Sunday")) ?> /></td></tr>
 			<?php
 				for ($i=0; $i < 7; $i++) { 
 					echo "<tr><td><label for='$i'>$groepen[$i]</label></td><td>
-					<textarea class='bigger' maxlength='100' name='$i'>$programmaArray[$i]</textarea></td></tr>";
+					<textarea class='bigger' maxlength='500' name='$i'>$programmaArray[$i]</textarea></td></tr>";
 				}
 			?>
 		</table>
