@@ -81,7 +81,7 @@
 	<span class="smalltitle">Programma's</span><br />
 	<form action="database/addProgrammas.php?chiro=<?php echo $chiro ?>" method="post">
 		<table><tr><td><label for = "datum">Datum</label></td>
-			<td><input type="date" name="datum" value=<?php echo date('Y-m-d', strtotime("Next Sunday")) ?> /></td></tr>
+			<td><input type="text" class="calendar nextsunday" name="datum" /></td></tr>
 			<?php
 				for ($i=0; $i < 7; $i++) { 
 					echo "<tr><td><label for='$i'>$groepen[$i]</label></td><td>

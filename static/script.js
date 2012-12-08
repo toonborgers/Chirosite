@@ -33,12 +33,20 @@ function showLogin(redirectImmediately){
 }
 
 function setUpCalendarFields(){
-	$('.calendar').datepicker({
+	var calendarFields = $('.calendar');
+	try {
+	calendarFields.datepicker({
 		showOn: "button",
 		buttonImage: "static/images/calendar.gif",
 		buttonImageOnly: true,
 		dateFormat: 'dd-mm-yy'
 	}).mask('99-99-9999');
+	} catch (e) {}
+	$.each(calendarFields, function(){
+		if($(this).hasClass('nextsunday')){
+			$(this).val(Date.today().next().sunday().toString('dd-M-yyyy'));
+		}	
+	});
 	
 	$('.ui-datepicker-trigger').css('cursor','pointer').attr({alt:'', title:''});
 }
