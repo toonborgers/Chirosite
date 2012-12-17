@@ -24,7 +24,7 @@
 	$posterIds = doSelectForMultipleResults($sql);
 	$posterTabel = "<table>";
 	foreach($posterIds as $posterId){
-    	$posterTabel .= "<tr><td><img src=".getImage($posterId["id"])." width='60'></td><td align='center'><a href=\"database/deletePoster.php?id=". $posterId["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
+    	$posterTabel .= "<tr><td><img src=".getImage($posterId["id"])." width='100'></td><td align='center'><a href=\"database/deletePoster.php?id=". $posterId["id"] ."\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
 		</span></a></td></tr>";
 	}
 	$posterTabel.="</table>";

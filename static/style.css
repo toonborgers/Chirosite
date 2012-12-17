@@ -13,7 +13,7 @@ body {
 #toplinks{position:absolute; right:10px; top:10px;}
 #menu{float:right; width:526px; height:32px; background-image:url("images/bg_menu.gif"); background-repeat:repeat-x;}
 #submenu{float:right; width:526px; height:32px; background-image:url("images/bg_submenu.gif"); background-position:top; background-repeat:repeat-x;}
-#contenttext{float:right; width:800px; padding-bottom:50px}
+#contenttext{float:right; width:700px; padding-bottom:50px; padding-right:50px}
 #leftpanel{float:left; width:274px;}
 #footer{float:left; position:fixed; bottom:0px; width:800px; background-color:#F0F0F0; padding:10px 0px;}
 #slagzin{
@@ -52,7 +52,7 @@ font-size: 1.2em;
 }
 
 .titlecontainer {
-	padding:10px;
+	padding-bottom:10px;
 }
 
 .titletext {
@@ -131,13 +131,19 @@ textarea.bigger {
 	height:50px;
 }
 
-.achtergrondSloebers, .achtergrondPinkels {
+.achtergrondSloebers, .achtergrondPinkels, .achtergrondSpeelclub, .achtergrondRakkers, 
+.achtergrondKwiks, .achtergrondToppers, .achtergrondTippers, .achtergrondKerels, .achtergrondTiptiens,
+.achtergrondAspiranten, .achtergrondAspis {
 	padding: 20px;
 	border: 1px solid #696;
 	margin: 10px;
 	-webkit-box-shadow: #666 2px 2px 3px;
 	-moz-box-shadow: #666 2px 2px 3px;
 	box-shadow: #666 2px 2px 3px;
+	color:#000000;
+}
+
+.achtergrondSloebers, .achtergrondPinkels {
 	background: #A43FFD;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#A43FFD), to(#FFFFFF));
 	background: -webkit-linear-gradient(#A43FFD, #FFFFFF);
@@ -147,16 +153,9 @@ textarea.bigger {
 	background: linear-gradient(#A43FFD, #FFFFFF);
 	-pie-background: linear-gradient(#A43FFD, #FFFFFF);
 	behavior: url(static/PIE.htc);
-	color:#000000;
 }
 
 .achtergrondSpeelclub {
-	padding: 20px;
-	border: 1px solid #696;
-	margin: 10px;
-	-webkit-box-shadow: #666 2px 2px 3px;
-	-moz-box-shadow: #666 2px 2px 3px;
-	box-shadow: #666 2px 2px 3px;
 	background: #FFFF00;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFF00), to(#FFFFFF));
 	background: -webkit-linear-gradient(#FFFF00, #FFFFFF);
@@ -166,16 +165,9 @@ textarea.bigger {
 	background: linear-gradient(#FFFF00, #FFFFFF);
 	-pie-background: linear-gradient(#FFFF00, #FFFFFF);
 	behavior: url(static/PIE.htc);
-	color:#000000;
 }
 
 .achtergrondRakkers, .achtergrondKwiks{
-	padding: 20px;
-	border: 1px solid #696;
-	margin: 10px;
-	-webkit-box-shadow: #666 2px 2px 3px;
-	-moz-box-shadow: #666 2px 2px 3px;
-	box-shadow: #666 2px 2px 3px;
 	background: #00FF00;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#00FF00), to(#FFFFFF));
 	background: -webkit-linear-gradient(#00FF00, #FFFFFF);
@@ -185,16 +177,9 @@ textarea.bigger {
 	background: linear-gradient(#00FF00, #FFFFFF);
 	-pie-background: linear-gradient(#00FF00, #FFFFFF);
 	behavior: url(static/PIE.htc);
-	color:#000000;
 }
 
 .achtergrondToppers, .achtergrondTippers{
-	padding: 20px;
-	border: 1px solid #696;
-	margin: 10px;
-	-webkit-box-shadow: #666 2px 2px 3px;
-	-moz-box-shadow: #666 2px 2px 3px;
-	box-shadow: #666 2px 2px 3px;
 	background: #FF0000;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FF0000), to(#FFFFFF));
 	background: -webkit-linear-gradient(#FF0000, #FFFFFF);
@@ -204,16 +189,9 @@ textarea.bigger {
 	background: linear-gradient(#FF0000, #FFFFFF);
 	-pie-background: linear-gradient(#FF0000, #FFFFFF);
 	behavior: url(static/PIE.htc);
-	color:#000000;
 }
 
 .achtergrondKerels, .achtergrondTiptiens {
-	padding: 20px;
-	border: 1px solid #696;
-	margin: 10px;
-	-webkit-box-shadow: #666 2px 2px 3px;
-	-moz-box-shadow: #666 2px 2px 3px;
-	box-shadow: #666 2px 2px 3px;
 	background: #0000FF;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#0000FF), to(#FFFFFF));
 	background: -webkit-linear-gradient(#0000FF, #FFFFFF);
@@ -223,16 +201,9 @@ textarea.bigger {
 	background: linear-gradient(#0000FF, #FFFFFF);
 	-pie-background: linear-gradient(#0000FF, #FFFFFF);
 	behavior: url(static/PIE.htc);
-	color:#000000;
 }
 
 .achtergrondAspiranten, .achtergrondAspis {
-	padding: 20px;
-	border: 1px solid #696;
-	margin: 10px;
-	-webkit-box-shadow: #666 2px 2px 3px;
-	-moz-box-shadow: #666 2px 2px 3px;
-	box-shadow: #666 2px 2px 3px;
 	background: #FF6600;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FF6600), to(#FFFFFF));
 	background: -webkit-linear-gradient(#FF6600, #FFFFFF);
@@ -242,5 +213,4 @@ textarea.bigger {
 	background: linear-gradient(#FF6600, #FFFFFF);
 	-pie-background: linear-gradient(#FF6600, #FFFFFF);
 	behavior: url(static/PIE.htc);
-	color:#000000;
 }

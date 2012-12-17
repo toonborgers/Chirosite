@@ -6,7 +6,7 @@
 <div class="titlecontainer">
 	<span class="titletext">Programma's <?php echo $datum ?></span>
 </div>
-<div class="bodytext" style="width:80%;">
+<div class="bodytext">
 	<?php
 		if($chiro=='j') {
 			$groepen = array(1=>"Sloebers", 2=>"Speelclub", 3=>"Rakkers", 4=>"Toppers", 5=>"Kerels", 6 =>"Aspiranten");
