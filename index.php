@@ -24,7 +24,7 @@
 	<body>
 		<div id="page" align="center">
 			<div id="wrapper">
-				<?php include("./nav.html"); ?>
+				<?php include("./nav.php"); ?>
 				<div id="contenttext">
 					<?php include 'content/'.$page;?>				
 				</div>			

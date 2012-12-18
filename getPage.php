@@ -11,7 +11,8 @@
 			"jHuren" => array("jHuren.php", false),
 			"kamp" => array("kamp.php", false),
 			"portal" => array("portal.php", true),
-			"contact" => array("contact.php", false)
+			"contact" => array("contact.php", false),
+			"kalender" => array("kalender.php", false)
 		);
 		
 		if(array_key_exists ($pageName, $pages)){
