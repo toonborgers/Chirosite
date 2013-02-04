@@ -12,7 +12,7 @@
 		$sql = "SELECT count(*) as aantal FROM new_login WHERE login='$login' and wachtwoord='$password'";
 		$logins = doSelectForSingleResult($sql);
 		
-		if($logins["aantal"] != "0"){
+		if($logins["aantal"] != "0") {
 			$_SESSION['login'] = $login;
 			header("Location: index.php?page=portal");
 		}

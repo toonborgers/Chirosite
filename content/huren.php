@@ -2,7 +2,12 @@
 	<span class="titletext">Huren</span>
 </div>
 <div class="bodytext">
-	<span class="smalltitle">Lokalen</span><br />
+	<?php
+		$chiro = $_GET['chiro'];
+		$queryResult = doSelectForSingleResult("SELECT tekst FROM new_verhuur WHERE chiro='$chiro' ORDER BY id DESC LIMIT 1");
+		echo $queryResult['tekst'];
+	?>
+	<!--<span class="smalltitle">Lokalen</span><br />
 	In 2011 hebben wij de laatste steen gelegd aan ons nieuw lokaal, dit wordt verhuurd sinds 2012.
 	Er zijn drie grote lokalen, een ruime keuken, voldoende sanitair, een groot zandplein en speelbos.
 	De prijs is 200 euro voor het huren, 50 euro voor de energie-kosten en 200 euro waarborg 
@@ -20,5 +25,5 @@
 	<img src="static/images/tent1.png" width="300">
 	<img src="static/images/tent2.png" width="300"><br />
 	<img src="static/images/tent3.png" width="300">
-	<img src="static/images/tent4.png" width="300"><br />
+	<img src="static/images/tent4.png" width="300"><br />-->
 </div>

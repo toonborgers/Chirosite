@@ -131,6 +131,11 @@ textarea.bigger {
 	height:50px;
 }
 
+textarea.biggest {
+	width:500px;
+	height:300px;
+}
+
 .achtergrondSloebers, .achtergrondPinkels, .achtergrondSpeelclub, .achtergrondRakkers, 
 .achtergrondKwiks, .achtergrondToppers, .achtergrondTippers, .achtergrondKerels, .achtergrondTiptiens,
 .achtergrondAspiranten, .achtergrondAspis {

@@ -4,7 +4,7 @@
 <div class="bodytext">
 	<?php
 		$chiro = $_GET['chiro'];
-		$queryResult = doSelectForSingleResult("SELECT adres, tekst FROM new_kamp WHERE chiro='$chiro'");
+		$queryResult = doSelectForSingleResult("SELECT adres, tekst FROM new_kamp WHERE chiro='$chiro' ORDER BY id DESC LIMIT 1");
 		if(count($queryResult)==0) {
 			echo "Rarara.. naar waar zullen we dit jaar op kamp gaan?!";
 		} else {

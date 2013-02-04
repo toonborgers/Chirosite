@@ -54,7 +54,6 @@ create table new_kalender (
 create table new_kamp (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	chiro char not null,
-	adres varchar(200) not null,
 	tekst varchar(5000) not null	
 ) engine=innodb;
 
@@ -69,6 +68,22 @@ create table new_afbeelding (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	type varchar(20) not null,
 	data mediumblob not null	
+) engine=innodb;
+
+create table new_verhuur (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	chiro char not null,
+	tekst varchar(5000) not null	
+) engine=innodb;
+
+create table new_chirofeesten (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	tekst varchar(5000) not null	
+) engine=innodb;
+
+create table new_contact (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	tekst varchar(5000) not null	
 ) engine=innodb;
 
 alter table new_leiding ADD CONSTRAINT fk_1 FOREIGN KEY (afbeeldingId) REFERENCES new_afbeelding (id);

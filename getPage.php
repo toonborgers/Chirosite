@@ -12,7 +12,9 @@
 			"kamp" => array("kamp.php", false),
 			"portal" => array("portal.php", true),
 			"contact" => array("contact.php", false),
-			"kalender" => array("kalender.php", false)
+			"kalender" => array("kalender.php", false),
+			"portal_help" => array("portal_help.php", true),
+			"chirofeesten" => array("chirofeesten.php", false)
 		);
 		
 		if(array_key_exists ($pageName, $pages)){
