@@ -20,7 +20,7 @@
 				echo "<tr>";
 			}
 			
-			$sql = "SELECT omschrijving FROM new_functies where id in (select functieId from new_leiding_functie where leidingId = ".$leider['id'] .")";
+			$sql = "SELECT omschrijving FROM new_functies where leidingId = ".$leider['id'];
 			$functies = doSelectForMultipleResults($sql);
 			
 			if($aantal-$j==1) {
@@ -28,13 +28,21 @@
 				<div class='achtergrond".$groepen[$i]." centreren'>
 				<img src='". getImage($leider['afbeeldingId']) ."' width='250'/><br />".
 				$leider['naam']  . plaktDiejeRommelIsAaneen($functies) . '<br/>
-				<a href="mailto:' .$leider["mail"] .'">' . $leider["mail"] .'</a>
-				</div></td></tr>';
+				<a href="mailto:' .$leider["mail"] .'">' . $leider["mail"] .'</a>';
+				if($editable) {
+					echo "<br /><a href=\"database/deleteLeider.php?id=" . $leider["id"] . "\">
+					<img src='static/images/delete.png' height='20' style='border-style:none'/></a>";
+				}
+				echo '</div></td></tr>';
 			} else {
 				echo "<td><div class='achtergrond".$groepen[$i]." centreren'>";
 				echo '<img src="'. getImage($leider['afbeeldingId']) .'" width="250"/><br />';
 				echo $leider['naam']  . plaktDiejeRommelIsAaneen($functies) . '<br/>';
 				echo '<a href="mailto:' .$leider["mail"] .'">' . $leider["mail"] .'</a>';
+				if($editable) {
+					echo "<br /><a href=\"database/deleteLeider.php?id=" . $leider["id"] . "\">
+					<img src='static/images/delete.png' height='20' style='border-style:none'/></a>";
+				}
 				echo "</div></td>";
 				if($j % 2!= 0 || $j==$aantal-1){
 					echo "</tr>";

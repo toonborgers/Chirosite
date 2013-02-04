@@ -19,15 +19,10 @@ create table new_leiding (
 	afbeeldingId int not null
 ) engine=innodb;
 
-create table new_leiding_functie (
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	leidingId int not null,
-	functieId int not null
-) engine=innodb;
-
 create table new_functies (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	omschrijving varchar(100) not null	
+	omschrijving varchar(100) not null,
+	leidingId INT NOT NULL
 )engine=innodb;
 
 create table new_nieuws (

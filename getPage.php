@@ -14,7 +14,8 @@
 			"contact" => array("contact.php", false),
 			"kalender" => array("kalender.php", false),
 			"portal_help" => array("portal_help.php", true),
-			"chirofeesten" => array("chirofeesten.php", false)
+			"chirofeesten" => array("chirofeesten.php", false),
+			"leidersAanpassen" => array("leidersAanpassen.php",true)
 		);
 		
 		if(array_key_exists ($pageName, $pages)){

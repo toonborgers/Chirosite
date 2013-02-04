@@ -75,8 +75,7 @@ $kalenderTabel = "<table>";
 foreach ($kalenderItems as $kalenderItem) {
 	$kalenderTabel .= "<tr><td>".$kalenderItem['datum']."</td><td>".htmlspecialchars($kalenderItem['activiteit'])."</td>
 	<td align='center'><a href=\"database/deleteKalender.php?id=" . $kalenderItem["id"] . "\">
-	<img src='static/images/delete.png' height='11' style='border-style:none'/></a>
-	</a></td></tr>";
+	<img src='static/images/delete.png' height='11' style='border-style:none'/></a></td></tr>";
 }
 $kalenderTabel .= "</table>";
 if (empty($kalenderItems)) {
@@ -162,6 +161,9 @@ if (empty($kalenderItems)) {
 		<textarea class="bigger" maxlength="500" name="activiteit"></textarea><br />
 		<input type="submit" value="Voeg kalender-item toe" />
 	</form><br />
+	
+	<span class="smalltitle">Info leiders</span><br />
+	Klik <a href="index.php?page=leidersAanpassen&chiro=<?php echo $chiro ?>">hier</a><br /><br />
 	
 	<span class="smalltitle">Kamp</span><br />
 	<form action="database/addKamp.php?chiro=<?php echo $chiro ?>" method="post">

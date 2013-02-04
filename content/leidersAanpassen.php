@@ -7,11 +7,11 @@
 	}
 ?>
 <div class="titlecontainer">
-	<span class="titletext"><?php echo $title ?></span>
+	<span class="titletext">Portal: <?php echo $title ?></span>
 </div>
 <div class="bodytext">
 	<?php 
-		$editable = FALSE;
+		$editable = TRUE;
 		include 'database/leider.php';
 	?>
 </div>
