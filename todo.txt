@@ -1,0 +1,7 @@
+submenu jongens/meisjes blijvend laten.
+iets voor een kamp tekstje te maken in portal
+foto-gallerij
+iets om chirofeestentekstje in portal te bewerken misschien?
+facebook integratie?
+iets om foto's automatisch te verkleinen want da laden uit den database duurt precies toch wel eventjes
+
