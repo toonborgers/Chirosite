@@ -1,6 +1,6 @@
 <?php
-	include_once 'database/dbUtil.php';
 	session_start();
+	include_once 'database/dbUtil.php';
 	
 	if(isset($_SESSION['login'])){
 		header("Location: index.php?page=portal");
@@ -17,6 +17,7 @@
 			header("Location: index.php?page=portal");
 		}
 	}
-	
-	header("Location: index.php");
+	else {
+		header("Location: index.php");
+	}
 ?>

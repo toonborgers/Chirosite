@@ -6,13 +6,17 @@ $(document).ready(function() {
 });
 
 function setUpMenu(){
-	$('#jongenslink').click(function(){
-		$('#mmenu').hide();
-		$('#jmenu').slideDown('fast');		
+	$('#jongenslink').click(function() {
+		if(!$('#mmenu').is(':hidden')) {
+			$('#mmenu').hide();
+		}
+		$('#jmenu').slideToggle('fast');		
 	});
-	$('#meisjeslink').click(function(){
-		$('#jmenu').hide();		
-		$('#mmenu').slideDown('fast');	
+	$('#meisjeslink').click(function() {
+		if(!$('#jmenu').is(':hidden')) {
+			$('#jmenu').hide();
+		}
+		$('#mmenu').slideToggle('fast');	
 	});
 }
 

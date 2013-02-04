@@ -1,4 +1,4 @@
-submenu jongens/meisjes blijvend laten.
+submenu jongens/meisjes blijvend laten. -kleer
 iets voor een kamp tekstje te maken in portal
 foto-gallerij
 iets om chirofeestentekstje in portal te bewerken misschien?
