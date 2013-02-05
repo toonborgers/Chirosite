@@ -28,6 +28,8 @@
 		
 		if(isset($fout)){
 			return $fout;
+		} else {
+			return $id;
 		}
 	}
 ?>

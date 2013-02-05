@@ -3,7 +3,7 @@ iets voor een kamp tekstje te maken in portal -kleer
 idem voor verhuur -kleer
 idem voor chirofeesten -kleer
 idem voor contact -kleer
-iets voor info leiders in portal
+iets voor info leiders in portal -kleer
 foto-gallerij
 iets in de portal om altijd terug te gaan naar een bepaald stukske als ge iets gedeletet hebt, anders altijd scrollen.
 verhuurkalender?
@@ -11,4 +11,5 @@ evt. iets om programma's van meerdere weken ineens toe te voegen?
 iets om chirofeestentekstje in portal te bewerken misschien?
 facebook integratie?
 iets om foto's automatisch te verkleinen want da laden uit den database duurt precies toch wel eventjes
+die blobs werke precies nie in IE?
 

@@ -132,11 +132,11 @@ textarea.bigger {
 }
 
 textarea.biggest {
-	width:500px;
-	height:300px;
+	width:600px;
+	height:400px;
 }
 
-.achtergrondSloebers, .achtergrondPinkels, .achtergrondSpeelclub, .achtergrondRakkers, 
+.achtergrondVB, .achtergrondSloebers, .achtergrondPinkels, .achtergrondSpeelclub, .achtergrondRakkers, 
 .achtergrondKwiks, .achtergrondToppers, .achtergrondTippers, .achtergrondKerels, .achtergrondTiptiens,
 .achtergrondAspiranten, .achtergrondAspis {
 	padding: 20px;
@@ -146,6 +146,18 @@ textarea.biggest {
 	-moz-box-shadow: #666 2px 2px 3px;
 	box-shadow: #666 2px 2px 3px;
 	color:#000000;
+}
+
+.achtergrondVB {
+	background: #FF5DB2;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FF5DB2), to(#FFFFFF));
+	background: -webkit-linear-gradient(#FF5DB2, #FFFFFF);
+	background: -moz-linear-gradient(#FF5DB2, #FFFFFF);
+	background: -ms-linear-gradient(#FF5DB2, #FFFFFF);
+	background: -o-linear-gradient(#FF5DB2, #FFFFFF);
+	background: linear-gradient(#FF5DB2, #FFFFFF);
+	-pie-background: linear-gradient(#FF5DB2, #FFFFFF);
+	behavior: url(static/PIE.htc);
 }
 
 .achtergrondSloebers, .achtergrondPinkels {

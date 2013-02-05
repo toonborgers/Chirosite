@@ -4,7 +4,7 @@
  * Nieuws opvragen
  * $nieuwsTabel geeft een volledig opgemaakte tabel inclusief een verwijder-button
  */
-$sql = "SELECT datum, bericht, id FROM new_nieuws ORDER BY datum DESC";
+$sql = "SELECT datum, bericht, id FROM new_nieuws ORDER BY id DESC";
 $berichten = doSelectForMultipleResults($sql);
 $nieuwsTabel = "<table>";
 foreach ($berichten as $bericht) {
@@ -26,12 +26,12 @@ if (empty($berichten)) {
 include_once '../database/imageUtil.php';
 $sql = "SELECT id FROM new_afbeelding WHERE id NOT IN (SELECT afbeeldingId FROM new_leiding)";
 $posterIds = doSelectForMultipleResults($sql);
-$posterTabel = "<table>";
+$posterTabel = "<table><tr>";
 foreach ($posterIds as $posterId) {
-	$posterTabel .= "<tr><td><img src=" . getImage($posterId["id"]) . " width='100'></td><td align='center'><a href=\"database/deletePoster.php?id=" . $posterId["id"] . "\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
-		</a></td></tr>";
+	$posterTabel .= "<td><img src=" . getImage($posterId["id"]) . " width='100'></td><td align='center'><a href=\"database/deletePoster.php?id=" . $posterId["id"] . "\"><img src='static/images/delete.png' height='11' style='border-style:none'/></a>
+		</a></td>";
 }
-$posterTabel .= "</table>";
+$posterTabel .= "</tr></table>";
 if (empty($posterIds)) {
 	$posterTabel = "Er zijn geen posters om weer te geven.";
 }
@@ -43,15 +43,13 @@ $login = $_SESSION['login'];
 $chiro = doSelectForSingleResult("SELECT chiro FROM new_login WHERE login='$login'");
 $chiro = $chiro['chiro'];
 $chiroFull = ( $chiro=='j' ? "Jongens" : "Meisjes" );
+$chiroLeiding = ( $chiro == 'j' ? "Leiders" : "Leidsters");
 
 /*
  * Groepen
  */
-if ($chiro == 'j') {
-	$groepen = array(0 => "Algemeen", 1 => "Sloebers", 2 => "Speelclub", 3 => "Rakkers", 4 => "Toppers", 5 => "Kerels", 6 => "Aspiranten");
-} else {
-	$groepen = array(0 => "Algemeen", 1 => "Pinkels", 2 => "Speelclub", 3 => "Kwiks", 4 => "Tippers", 5 => "Tiptiens", 6 => "Aspi's");
-}
+ $groepen = ($chiro == 'j' ? 	array(0 => "Algemeen", 1 => "Sloebers", 2 => "Speelclub", 3 => "Rakkers", 4 => "Toppers", 5 => "Kerels", 6 => "Aspiranten") :
+ 								array(0 => "Algemeen", 1 => "Pinkels", 2 => "Speelclub", 3 => "Kwiks", 4 => "Tippers", 5 => "Tiptiens", 6 => "Aspi's"));
 
 /*
  * Programma's opvragen
@@ -138,7 +136,7 @@ if (empty($kalenderItems)) {
 		<input type="submit" value="Voeg poster toe" />
 	</form><br />
 	
-	<span class="smalltitle">Programma's</span><br />
+	<span class="smalltitle">Programma's <?php echo $chiroFull ?></span><br />
 	<form action="database/addProgrammas.php?chiro=<?php echo $chiro ?>" method="post">
 		<table><tr><td><label for = "datum">Datum</label></td>
 			<td><input type="text" class="calendar nextsunday" name="datum" /></td></tr>
@@ -162,16 +160,16 @@ if (empty($kalenderItems)) {
 		<input type="submit" value="Voeg kalender-item toe" />
 	</form><br />
 	
-	<span class="smalltitle">Info leiders</span><br />
-	Klik <a href="index.php?page=leidersAanpassen&chiro=<?php echo $chiro ?>">hier</a><br /><br />
+	<span class="smalltitle">Info <?php echo $chiroLeiding ?></span><br />
+	Klik <a href="index.php?page=leidingAanpassen">hier</a><br /><br />
 	
-	<span class="smalltitle">Kamp</span><br />
+	<span class="smalltitle">Kamp <?php echo $chiroFull ?></span><br />
 	<form action="database/addKamp.php?chiro=<?php echo $chiro ?>" method="post">
 		<textarea class="biggest" maxlength="5000" name="kamp"><?php echo $kamp ?></textarea><br />
 		<input type="submit" value="Pas kamptekstje aan" />
 	</form><br />
 	
-	<span class="smalltitle">Verhuur</span><br />
+	<span class="smalltitle">Verhuur <?php echo $chiroFull ?></span><br />
 	<form action="database/addVerhuur.php?chiro=<?php echo $chiro ?>" method="post">
 		<textarea class="biggest" maxlength="5000" name="tekstje"><?php echo $verhuur ?></textarea><br />
 		<input type="submit" value="Pas verhuur-tekstje aan" />
@@ -187,5 +185,9 @@ if (empty($kalenderItems)) {
 	<form action="database/addContact.php" method="post">
 		<textarea class="biggest" maxlength="5000" name="tekstje"><?php echo $contact ?></textarea><br />
 		<input type="submit" value="Pas contact-tekstje aan" />
-	</form><br />
+	</form><br /><br />
+	
+	<form action="logout.php" method="post">
+		<input type="submit" value="Uitloggen" />
+	</form>
 </div>
