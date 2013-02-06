@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" type="text/css" />
 		<script type="text/javascript" src="static/date.js"></script>
 		<script type="text/javascript" src="static/shadowbox/shadowbox.js"></script>
+		<script type="text/javascript">Shadowbox.init();</script>
 		<script type="text/javascript" src="static/script.js"></script>
 </script>
 		<title>Chiro Kasterlee</title>

@@ -2,7 +2,6 @@
 	<span class="titletext">Foto's</span>
 </div>
 <div class="bodytext">
-	Gelieve te wachten met foto's te openen totdat alles geladen is.
 	<?php
 		$map="fotos";
 		if(!empty($_GET['map']))
