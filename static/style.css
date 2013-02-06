@@ -136,8 +136,16 @@ textarea.biggest {
 	height:400px;
 }
 
-td.center {
+td.map, td.pic {
 	text-align:center;
+}
+
+td.map {
+	vertical-align:top;
+}
+
+img.noborder {
+	border-style:none;
 }
 
 .achtergrondVB, .achtergrondSloebers, .achtergrondPinkels, .achtergrondSpeelclub, .achtergrondRakkers, 

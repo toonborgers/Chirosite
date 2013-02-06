@@ -24,9 +24,9 @@
 			$newfileEncoded = rawurlencode($newfile);
 			$newfileEncoded = str_replace('%2F', '/', $newfileEncoded);
 			if(is_dir($newfile))
-				echo "<td class='center' ".$style."><a href=index.php?page=fotos&map=".$newfileEncoded."><img src='$folderPic' width=100%/></a><br/>".$file."</td>";
+				echo "<td class='map' ".$style."><a href=index.php?page=fotos&map=".$newfileEncoded."><img src='$folderPic' width=100% class='noborder'/></a><br/>".$file."</td>";
 			else
-				echo "<td class='center' ".$style."><a href=".$newfileEncoded." rel='shadowbox[Gallery]'><img src=".$newfileEncoded." width=100%></a></td>";
+				echo "<td class='pic' ".$style."><a href=".$newfileEncoded." rel='shadowbox[Gallery]'><img src=".$newfileEncoded." width=100% class='noborder'/></a></td>";
 			$i++;
 		}
 		echo "<tr></table>";

@@ -10,7 +10,7 @@ function generateSubMenu($chiro) {
 	<a href='index.php?page=info&chiro=$chiro'>Info</a> | <a href='index.php?page=prog&chiro=$chiro'>Programma's</a> |
 	<a href='index.php?page=kamp&chiro=$chiro'>Het kamp</a> | <a href='index.php?page=kalender&chiro=$chiro'>Kalender</a> | 
 	<a href='index.php?page=huren&chiro=$chiro'>Huren</a> | <a href='$facebookLink'>
-	<img src='static/images/facebook-icon.png' height='11' style='border-style:none'/></a></span>";
+	<img src='static/images/facebook-icon.png' height='11' class='noborder'/></a></span>";
 }
 
 ?>
