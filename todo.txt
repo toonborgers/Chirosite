@@ -4,7 +4,7 @@ idem voor verhuur -kleer
 idem voor chirofeesten -kleer
 idem voor contact -kleer
 iets voor info leiders in portal -kleer
-foto-gallerij
+foto-gallerij -kleer
 iets in de portal om altijd terug te gaan naar een bepaald stukske als ge iets gedeletet hebt, anders altijd scrollen.
 verhuurkalender?
 evt. iets om programma's van meerdere weken ineens toe te voegen?

@@ -136,6 +136,10 @@ textarea.biggest {
 	height:400px;
 }
 
+td.center {
+	text-align:center;
+}
+
 .achtergrondVB, .achtergrondSloebers, .achtergrondPinkels, .achtergrondSpeelclub, .achtergrondRakkers, 
 .achtergrondKwiks, .achtergrondToppers, .achtergrondTippers, .achtergrondKerels, .achtergrondTiptiens,
 .achtergrondAspiranten, .achtergrondAspis {

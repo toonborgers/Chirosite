@@ -2,17 +2,34 @@
 	<span class="titletext">Foto's</span>
 </div>
 <div class="bodytext">
-	<?php   
-		$dir_handle = opendir("fotos");
-		// Loop through the files
+	Gelieve te wachten met foto's te openen totdat alles geladen is.
+	<?php
+		$map="fotos";
+		if(!empty($_GET['map']))
+			$map = $_GET['map'];
+		$folderPic = "static/images/folder.png"; 
+		$maxColumns = 5;
+		$width = 600;
+		$i = 0;
+		$dir_handle = opendir($map);
+		$style="style='width:".$width/$maxColumns."px'";
+		// Loop through the files & make up a table
+		echo "<table><tr>";
 		while ($file = readdir($dir_handle)) {
 			if ($file == "." || $file == ".." || $file == "index.php")
 				continue;
-			if(is_dir("fotos/".$file))
-				echo "<a href=fotos/".$file.">$file</a><br />";
+			if($i%$maxColumns == 0 && $i != 0)
+				echo "</tr><tr>";
+			$newfile = $map."/".$file;
+			$newfileEncoded = rawurlencode($newfile);
+			$newfileEncoded = str_replace('%2F', '/', $newfileEncoded);
+			if(is_dir($newfile))
+				echo "<td class='center' ".$style."><a href=index.php?page=fotos&map=".$newfileEncoded."><img src='$folderPic' width=100%/></a><br/>".$file."</td>";
 			else
-				echo "<a href=fotos/".$file.">$file</a><br />";
+				echo "<td class='center' ".$style."><a href=".$newfileEncoded." rel='shadowbox[Gallery]'><img src=".$newfileEncoded." width=100%></a></td>";
+			$i++;
 		}
+		echo "<tr></table>";
 		closedir($dir_handle);
 	?>
 </div>
