@@ -1,7 +1,7 @@
 <div class="titlecontainer">
 	<span class="titletext">Nieuws</span>
 </div>
-<div class="bodytext" style="padding:12px;" align="center">
+<div class="bodytext">
 	<?php
 		include "database/nieuws.php";
 		echo "<br />";

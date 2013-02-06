@@ -15,7 +15,8 @@
 			"kalender" => array("kalender.php", false),
 			"portal_help" => array("portal_help.php", true),
 			"chirofeesten" => array("chirofeesten.php", false),
-			"leidingAanpassen" => array("leidingAanpassen.php",true)
+			"leidingAanpassen" => array("leidingAanpassen.php",true),
+			"fotos" => array("fotos.php", false)
 		);
 		
 		if(array_key_exists ($pageName, $pages)){

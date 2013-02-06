@@ -24,7 +24,7 @@ function generateSubMenu($chiro) {
 <div id="menu">
 	<div align="right" class="smallwhitetext" style="padding:9px;">
 		<a href="index.php?page=home">Home</a> | <a id="jongenslink" href="javascript:void(0)">Jongens</a> | 
-		<a id="meisjeslink" href="javascript:void(0)">Meisjes</a> | <a href="index.php?page=foto">Foto's</a> | 
+		<a id="meisjeslink" href="javascript:void(0)">Meisjes</a> | <a href="index.php?page=fotos">Foto's</a> | 
 		<a href="index.php?page=chirofeesten">Chirofeesten</a> | <a href="index.php?page=contact">Contact</a> 
 	</div>
 </div>
