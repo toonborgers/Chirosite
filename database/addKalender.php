@@ -7,5 +7,5 @@
 	$activiteit = str_replace("'", "''", $activiteit);
 	$sql = "INSERT INTO new_kalender VALUES (NULL , '$chiro' , '$sqlDate' , '$activiteit');";
 	doInsert($sql);
-	header("Location: ../index.php?page=portal");
+	header("Location: ../index.php?page=portal#kalender");
 ?>

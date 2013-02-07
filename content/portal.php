@@ -113,7 +113,8 @@ if (empty($kalenderItems)) {
 		<input type="submit" value="Verander programma's">
 	</form></br>
 	
-	<span class="smalltitle">Kalender</span><br />
+	<span class="smalltitle">Kalender</span>
+	<a name="kalender"></a><br />
 	<?php echo $kalenderTabel ?></br/></br/>
 	<form action="database/addKalender.php" method="post">
 		<label for="datum">Datum: </label><input type="text" class="calendar" name="datum" /> 
