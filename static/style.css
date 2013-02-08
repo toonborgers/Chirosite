@@ -148,6 +148,22 @@ img.noborder {
 	border-style:none;
 }
 
+table.verhuur {
+	border-collapse:collapse;
+	margin:20px
+}
+table.verhuur, td.verhuur {
+	border:1px solid black;
+	padding:10px;
+}
+
+.verhuurKleur {
+	color: red; 
+	font-weight: bold; 
+	font-size: larger; 
+	text-decoration: blink;
+}
+
 .achtergrondVB, .achtergrondSloebers, .achtergrondPinkels, .achtergrondSpeelclub, .achtergrondRakkers, 
 .achtergrondKwiks, .achtergrondToppers, .achtergrondTippers, .achtergrondKerels, .achtergrondTiptiens,
 .achtergrondAspiranten, .achtergrondAspis {

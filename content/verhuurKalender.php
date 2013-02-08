@@ -2,9 +2,48 @@
 # PHP Calendar (version 2.3), written by Keith Devens 
 # http://keithdevens.com/software/php_calendar 
 #  see example at http://keithdevens.com/weblog 
-# License: http://keithdevens.com/software/license 
+# License: http://keithdevens.com/software/license
+# adjustments made by stijn hoskens ;)
 
-function generate_calendar($year, $month, $days = array(), $day_name_length = 3, $month_href = NULL, $first_day = 0, $pn = array()){ 
+include_once 'database/dbUtil.php';
+
+function generate_coloredCalenderTable($nbOfMonths, $columns, $chiro) {
+	$sql = "SELECT datum FROM new_verhuurdatum WHERE chiro = '$chiro'";
+	$data = doSelectForMultipleResults($sql);
+	$verhuurd = array();
+	foreach ($data as $rij) {
+		$datum = $rij["datum"];
+		$maand = date("m",strtotime($datum));
+		$jaar = date("Y",strtotime($datum));
+		if($jaar != date("Y"))
+			$maand += ($jaar - date("Y"))*12;
+		$dag = date("j", strtotime($datum));
+		$verhuurd[intval($maand)][$dag] = array(NULL,NULL,'<span class="verhuurKleur">'.$dag.'</span>');
+	}
+	generate_calendarTable($nbOfMonths, $columns, $verhuurd);
+}
+
+function generate_calendarTable($nbOfMonths, $columns, $verhuurd = array()) {
+	# verhuurd moet een array zijn met daarin een array met de maand en de dag
+	$oldlocale = setlocale(LC_TIME, NULL); #save current locale 
+    setlocale(LC_TIME, 'nl_NL'); #dutch 
+    $time = time();
+    $year = date('Y', $time);
+	$month = date('n', $time);
+	echo "<table class='verhuur'><tr>";
+	for($i=0; $i < $nbOfMonths; $i++, $month++) {
+		$days = $verhuurd[$month];
+		if($i%$columns == 0 && $i != 0)
+			echo "</tr><tr>";
+		echo "<td class='verhuur'>";
+		echo generate_calendar($year, $month, $days);
+		echo "</td>";
+	}
+	echo "</tr></table>";
+	setlocale(LC_TIME, $oldlocale); 
+}
+
+function generate_calendar($year, $month, $days = array(), $day_name_length = 2, $month_href = NULL, $first_day = 1, $pn = array()){ 
     $first_of_month = gmmktime(0,0,0,$month,1,$year); 
     #remember that mktime will automatically correct if invalid dates are entered 
     # for instance, mktime(0,0,0,12,32,1997) will be the date for Jan 1, 1998 
