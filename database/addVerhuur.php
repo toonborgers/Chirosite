@@ -5,5 +5,5 @@
 	$chiro = $_GET['chiro'];
 	$sql = "INSERT INTO new_verhuur VALUES (NULL , '$chiro' , '$tekstje');";
 	doInsert($sql);
-	header("Location: ../index.php?page=portal");
+	header("Location: ../index.php?page=tekstjesAanpassen");
 ?>

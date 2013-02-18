@@ -7,18 +7,34 @@
 
 include_once 'database/dbUtil.php';
 
-function generate_coloredCalenderTable($nbOfMonths, $columns, $chiro) {
+function generate_coloredCalenderTable($nbOfMonths, $columns, $chiro, $editable = FALSE) {
+	$verhuurd = array();
+	if($editable) {
+		$maand = intval(date("m", time()));
+		$jaar = intval(date("Y", time()));
+		for ($i=0; $i < $nbOfMonths; $i++, 	$maand = intval(date("m",strtotime("+".$i." months"))), 
+											$jaar = intval(date("Y",strtotime("+".$i." months")))) { 
+			$nbOfDays = cal_days_in_month(CAL_GREGORIAN, $maand, $jaar);
+			for ($j=1; $j <= $nbOfDays; $j++) { 
+				$verhuurd[$maand][$j] = array('database/addVerhuurdag.php?
+				datum='.$j.'-'.$maand.'-'.$jaar,'linked-day');
+			}
+		}
+	}
 	$sql = "SELECT datum FROM new_verhuurdatum WHERE chiro = '$chiro'";
 	$data = doSelectForMultipleResults($sql);
-	$verhuurd = array();
 	foreach ($data as $rij) {
 		$datum = $rij["datum"];
-		$maand = date("m",strtotime($datum));
-		$jaar = date("Y",strtotime($datum));
+		$maand = intval(date("m",strtotime($datum)));
+		$jaar = intval(date("Y",strtotime($datum)));
 		if($jaar != date("Y"))
 			$maand += ($jaar - date("Y"))*12;
-		$dag = date("j", strtotime($datum));
-		$verhuurd[intval($maand)][$dag] = array(NULL,NULL,'<span class="verhuurKleur">'.$dag.'</span>');
+		$dag = intval(date("j", strtotime($datum)));
+		if($editable)
+			$verhuurd[$maand][$dag] = 
+			array('database/deleteVerhuurdag.php?datum='.$dag.'-'.$maand.'-'.$jaar,
+			'linked-day','<span class="verhuurKleur">'.$dag.'</span>');
+		else $verhuurd[$maand][$dag] = array(NULL, NULL,'<span class="verhuurKleur">'.$dag.'</span>');
 	}
 	generate_calendarTable($nbOfMonths, $columns, $verhuurd);
 }

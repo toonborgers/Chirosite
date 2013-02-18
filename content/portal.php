@@ -130,6 +130,9 @@ if (empty($kalenderItems)) {
 	<span class="smalltitle">Tekstjes kamp, verhuur, chirofeesten of contact veranderen?</span><br />
 	Klik <a href="index.php?page=tekstjesAanpassen">hier</a><br /><br />
 	
+	<span class="smalltitle">Verhuurkalender aanpassen?</span><br />
+	Klik <a href="index.php?page=verhuurkalenderAanpassen">hier</a><br /><br />
+	
 	<form action="logout.php" method="post">
 		<input type="submit" value="Uitloggen" />
 	</form>

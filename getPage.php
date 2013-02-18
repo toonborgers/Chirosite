@@ -15,9 +15,10 @@
 			"kalender" => array("kalender.php", false),
 			"portal_help" => array("portal_help.php", true),
 			"chirofeesten" => array("chirofeesten.php", false),
-			"leidingAanpassen" => array("leidingAanpassen.php",true),
+			"leidingAanpassen" => array("portal_leiding.php",true),
 			"fotos" => array("fotos.php", false),
-			"tekstjesAanpassen" => array("portal_tekstjes.php",true)
+			"tekstjesAanpassen" => array("portal_tekstjes.php",true),
+			"verhuurkalenderAanpassen" => array("portal_verhuurkalender.php", true)
 		);
 		
 		if(array_key_exists ($pageName, $pages)){

@@ -4,5 +4,5 @@
 	$tekstje = str_replace("'", "''", $tekstje);
 	$sql = "INSERT INTO new_chirofeesten VALUES (NULL , '$tekstje');";
 	doInsert($sql);
-	header("Location: ../index.php?page=portal");
+	header("Location: ../index.php?page=tekstjesAanpassen");
 ?>

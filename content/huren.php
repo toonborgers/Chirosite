@@ -8,7 +8,7 @@
 		echo $queryResult['tekst'];
 		echo "<br /><span class='smalltitle'>Kalender</span><br />
 		Rode dagen betekent dat het lokaal dan reeds verhuurd is.<br />";
-		include "content/verhuurKalendar.php";
+		include "content/verhuurKalender.php";
 		$nbOfMonths = 6; $columns = 3;
 		
 		generate_coloredCalenderTable($nbOfMonths, $columns, $chiro);
