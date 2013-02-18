@@ -7,8 +7,8 @@ iets voor info leiders in portal -kleer
 foto-gallerij -kleer
 iets in de portal om altijd terug te gaan naar een bepaald stukske als ge iets gedeletet hebt, anders altijd scrollen. -kleer
 verhuurkalender? -kleer
-evt. iets om programma's van meerdere weken ineens toe te voegen?
-iets om chirofeestentekstje in portal te bewerken misschien?
+evt. iets om programma's van meerdere weken ineens toe te voegen? -nope
+iets om chirofeestentekstje in portal te bewerken misschien? -kleer
 facebook integratie?
 iets om foto's automatisch te verkleinen want da laden uit den database duurt precies toch wel eventjes
 die blobs werke precies nie in IE?
