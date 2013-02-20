@@ -15,11 +15,16 @@ function generateSubMenu($chiro) {
 
 ?>
 
-<div id="logo"><a href="index.php"><img src="static/images/logo.jpg" style="border-style:none"/></a></div>
+<div id="logo"><a href="index.php"><img src="static/images/logo.jpg" class="noborder"/></a></div>
 <div id="topheader">
 	<div align="left" class="beep">
 		<img src="static/images/chirokasterlee.jpg"/>
 	</div>
+</div>
+<div id="fb">
+	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fchirokasterlee.be&amp;send=false&amp;
+	layout=button_count&amp;width=450&amp;show_faces=true&amp;font=tahoma&amp;colorscheme=light&amp;action=like&amp;
+	height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 </div>
 <div id="menu">
 	<div align="right" class="smallwhitetext" style="padding:9px;">
