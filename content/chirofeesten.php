@@ -3,7 +3,7 @@
 </div>
 <div class="bodytext">
 	<?php
-		$queryResult = doSelectForSingleResult("SELECT tekst FROM new_kamp ORDER BY id DESC LIMIT 1");
+		$queryResult = doSelectForSingleResult("SELECT tekst FROM new_chirofeesten ORDER BY id DESC LIMIT 1");
 		echo $queryResult['tekst'];
 	?>
 </div>
