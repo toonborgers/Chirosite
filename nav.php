@@ -20,17 +20,18 @@ function generateSubMenu($chiro) {
 	<div align="left" class="beep">
 		<img src="static/images/chirokasterlee.jpg"/>
 	</div>
-</div>
-<div id="fb">
-	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fchirokasterlee.be&amp;send=false&amp;
-	layout=button_count&amp;width=450&amp;show_faces=true&amp;font=tahoma&amp;colorscheme=light&amp;action=like&amp;
-	height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	<div id="fb">
+		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fchirokasterlee.be&amp;send=false&amp;
+		layout=button_count&amp;width=450&amp;show_faces=true&amp;font=tahoma&amp;colorscheme=light&amp;action=like&amp;
+		height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	</div>
 </div>
 <div id="menu">
 	<div align="right" class="smallwhitetext" style="padding:9px;">
 		<a href="index.php?page=home">Home</a> | <a id="jongenslink" href="javascript:void(0)">Jongens</a> | 
 		<a id="meisjeslink" href="javascript:void(0)">Meisjes</a> | <a href="index.php?page=fotos">Foto's</a> | 
-		<a href="index.php?page=chirofeesten">Chirofeesten</a> | <a href="index.php?page=contact">Contact</a> 
+		<a href="index.php?page=chirofeesten">Chirofeesten</a> | <a href="index.php?page=oudercomite">Oudercomit&#233;</a> | 
+		<a href="index.php?page=contact">Contact</a> 
 	</div>
 </div>
 <div id="submenu">

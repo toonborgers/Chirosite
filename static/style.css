@@ -9,8 +9,8 @@ body {
 }
 #wrapper{width: 800px;}
 #logo{float:left; width:274px; height:213px;}
-#topheader{float:right; width:526px; height:97px; background-color:#F0F0F0; position:relative}
-#fb{border:none; overflow:hidden; float:left; width:450px; height:21px; position:absolute; right:100px; top:42px;}
+#topheader{float:right; width:526px; height:97px; background-color:#F0F0F0; position:relative;}
+#fb{border:none; overflow:hidden; float:right; width:450px; height:21px; position:relative; right:-180px; top:-55px;}
 #menu{float:right; width:526px; height:32px; background-image:url("images/bg_menu.gif"); background-repeat:repeat-x;}
 #submenu{float:right; width:526px; height:32px; background-image:url("images/bg_submenu.gif"); background-position:top; background-repeat:repeat-x;}
 #contenttext{float:right; width:700px; padding-bottom:50px; padding-right:50px}

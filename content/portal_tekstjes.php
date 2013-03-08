@@ -40,6 +40,15 @@ $chiroFull = ( $chiro=='j' ? "jongens" : "meisjes" );
  $contact = doSelectForSingleResult("SELECT tekst FROM new_contact ORDER BY id DESC LIMIT 1");
  $contact = $contact['tekst'];
  $contact = htmlspecialchars($contact);
+ 
+    /**
+ * Oudercomité tekstje opvragen
+ * $oudercomite is een string met daarin de tekst.
+ */
+ 
+ $oudercomite = doSelectForSingleResult("SELECT tekst FROM new_oudercomite ORDER BY id DESC LIMIT 1");
+ $oudercomite = $oudercomite['tekst'];
+ $oudercomite = htmlspecialchars($oudercomite);
 ?>
 <div class="titlecontainer">
 	<span class="titletext">Tekstjes aanpassen</span>
@@ -67,5 +76,11 @@ $chiroFull = ( $chiro=='j' ? "jongens" : "meisjes" );
 	<form action="database/addContact.php" method="post">
 		<textarea class="biggest" maxlength="5000" name="tekstje"><?php echo $contact ?></textarea><br />
 		<input type="submit" value="Pas contact-tekstje aan" />
+	</form><br /><br />
+	
+	<span class="smalltitle">Oudercomit&#233;</span><br />
+	<form action="database/addOudercomite.php" method="post">
+		<textarea class="biggest" maxlength="5000" name="tekstje"><?php echo $oudercomite ?></textarea><br />
+		<input type="submit" value="Pas oudercomite-tekstje aan" />
 	</form><br /><br />
 </div>
