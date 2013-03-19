@@ -4,7 +4,7 @@
 	function getImage($id){		
 		$foto = doSelectForSingleResult("SELECT * FROM new_afbeelding where id = $id");
 		
-		return 'data:image/'. $foto["type"] . ';base64,' . $foto['data'] ;	
+		return 'data:'. $foto["type"] . ';base64,' . $foto['data'] ;	
 	}
 	
 	function addImage($file){	
