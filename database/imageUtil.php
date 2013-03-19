@@ -1,4 +1,5 @@
 <?php
+
 	include_once "database/dbUtil.php";
 
 	function getImage($id){		
@@ -31,5 +32,23 @@
 		} else {
 			return $id;
 		}
+	}
+	
+	include_once "simpleImage.php";
+	
+	/**
+	 * Da krijk hie nie kleer me hetgeen wa em als argument bij addImage verwacht.
+	 */
+	function resizeAndAddImage_width($foto, $width) {
+      	$image = new SimpleImage();
+		$image->load($foto['tmp_name']);
+		$image->resizeToWidth($width);
+		return addImage($image->image);
+	}
+	
+	function resizeAndAddImage_height($foto, $height) {
+		$image = new SimpleImage();
+		$image->resizeToHeight($height);
+		addImage($image->image);
 	}
 ?>
