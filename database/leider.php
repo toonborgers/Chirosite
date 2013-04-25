@@ -34,7 +34,9 @@
 			} else {
 				if($j % 2==0)
 					echo "<tr>";
-				echo "<td><div class='achtergrond".$groepen[$i]." centreren'>";
+				$groep = $groepen[$i];
+				if($groep == "Aspi's") { $groep = "Aspis"; }
+				echo "<td><div class='achtergrond".$groep." centreren'>";
 				echo '<img src="'. getImage($leider['afbeeldingId']) .'" width="250"/><br />';
 				echo $leider['naam']  . plaktDiejeRommelIsAaneen($functies) . '<br/>';
 				echo '<a href="mailto:' .$leider["mail"] .'">' . $leider["mail"] .'</a>';
