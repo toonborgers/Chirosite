@@ -9,7 +9,7 @@
 	}
 	
 	function addImage($file){	
-		$allowedExts = array("jpg", "jpeg", "gif", "png");
+		$allowedExts = array("jpg", "JPG", "jpeg", "JPEG", "gif", "GIF", "png", "PNG");
 		$extension = end(explode(".", $file["name"]));
 		$fileType= $file["type"];
 		
