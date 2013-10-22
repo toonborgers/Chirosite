@@ -56,7 +56,7 @@ $chiroFull = ( $chiro=='j' ? "jongens" : "meisjes" );
 <div class="bodytext">
 	<span class="smalltitle">Kamp <?php echo $chiroFull ?></span><br />
 	<form action="database/addKamp.php?chiro=<?php echo $chiro ?>" method="post">
-		<textarea class="biggest" maxlength="5000" name="kamp"><?php echo $kamp ?></textarea><br />
+		<textarea class="biggest" maxlength="5000" name="tekstje"><?php echo $kamp ?></textarea><br />
 		<input type="submit" value="Pas kamptekstje aan" />
 	</form><br />
 	
