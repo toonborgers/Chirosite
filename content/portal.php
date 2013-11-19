@@ -106,7 +106,7 @@ if (empty($kalenderItems)) {
 			<?php
 			for ($i = 0; $i < 7; $i++) {
 				echo "<tr><td><label for='$i'>$groepen[$i]</label></td><td>
-					<textarea class='bigger' maxlength='1000' name='$i'>$programmaArray[$i]</textarea></td></tr>";
+					<textarea class='bigger' maxlength='2000' name='$i'>$programmaArray[$i]</textarea></td></tr>";
 			}
 		?>
 		</table>
