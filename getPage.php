@@ -19,7 +19,8 @@
 			"fotos" => array("fotos.php", false),
 			"tekstjesAanpassen" => array("portal_tekstjes.php",true),
 			"verhuurkalenderAanpassen" => array("portal_verhuurkalender.php", true),
-			"oudercomite" => array("oudercomite.php", false)
+			"oudercomite" => array("oudercomite.php", false),
+			"buitenlandsKamp" => array("buitenlandskamp.php", false)
 		);
 		
 		if(array_key_exists ($pageName, $pages)){

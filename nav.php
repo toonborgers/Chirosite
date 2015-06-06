@@ -6,9 +6,10 @@ function generateSubMenu($chiro) {
 		$display = "style='display:inline;'";
 	}
 	$facebookLink = ($chiro=='j' ? 'http://www.facebook.com/pages/Chirojongens-Kasterlee/361776797234878' : 'http://www.facebook.com/chiromeisjes.kasterlee');
+	$buitenlandsKamp = ($chiro=='j' ? "| <a href='index.php?page=buitenlandsKamp&chiro=$chiro'>Buitenlands kamp 2016</a> " : "");
 	echo "<span id='$chiro"."menu' $display>
 	<a href='index.php?page=info&chiro=$chiro'>Info</a> | <a href='index.php?page=prog&chiro=$chiro'>Programma's</a> |
-	<a href='index.php?page=kamp&chiro=$chiro'>Het kamp</a> | <a href='index.php?page=kalender&chiro=$chiro'>Kalender</a> | 
+	<a href='index.php?page=kamp&chiro=$chiro'>Het kamp</a> $buitenlandsKamp| <a href='index.php?page=kalender&chiro=$chiro'>Kalender</a> | 
 	<a href='index.php?page=huren&chiro=$chiro'>Huren</a> | <a href='$facebookLink'>
 	<img src='static/images/facebook-icon.png' height='11' class='noborder'/></a></span>";
 }
